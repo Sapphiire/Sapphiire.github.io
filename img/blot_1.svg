@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="474.037" height="456.868" viewBox="0 0 474.037 456.868">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.255" y1="-0.022" x2="1.993" y2="2.156" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#665eff"/>
+      <stop offset="1" stop-color="#c840e9"/>
+    </linearGradient>
+  </defs>
+  <path id="Контур_446" data-name="Контур 446" d="M275.183,4.811C186.806-32.377-8.177,156.04.266,226.13S150.823,372.622,264.193,375.182,363.56,42,275.183,4.811Z" transform="matrix(0.358, 0.934, -0.934, 0.358, 350.276, 0)" fill="url(#linear-gradient)"/>
+</svg>

@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="193.616" height="182.302" viewBox="0 0 193.616 182.302">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#linear-gradient);
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="0.605" y1="-0.187" x2="-0.084" y2="1.641" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#ff4f9a"/>
+      <stop offset="1" stop-color="#ff9057"/>
+    </linearGradient>
+  </defs>
+  <path id="Контур_450" data-name="Контур 450" class="cls-1" d="M125.482,2.194C85.182-14.764-3.729,71.153.121,103.114s68.653,66.8,120.349,67.967S165.782,19.151,125.482,2.194Z" transform="translate(193.616 26.764) rotate(99)"/>
+</svg>
