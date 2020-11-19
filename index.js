@@ -4454,19 +4454,22 @@ const fp = new fullpage('#fullpage', {
 })
 const sign_in = document.querySelector('.sign-in'),
       sign_up = document.querySelector('.sign-up'),
-      modal = document.querySelector('.modal'),
-      overlay = document.querySelector('.overlay');
+      modal_sign_1 = document.querySelector('.modal-sign[data-modal="sign"]'),
+      modal_sign_2 = document.querySelector('.modal-reg[data-modal="reg"]');
+
+sign_in.addEventListener('click', () => {
+  modal_sign_1.classList.add('active');
+})
+sign_up.addEventListener('click', () => {
+  modal_sign_2.classList.add('active');
+})
 
 
-const modal1_open = () => {
-  modal.classList.add('active');
-  overlay.classList.add('active');
-}
-sign_in.addEventListener('click', modal1_open)
-sign_up.addEventListener('click', modal1_open)
-overlay.addEventListener('click', () => {
-  modal.classList.remove('active');
-  overlay.classList.remove('active');
+document.addEventListener('keydown', (event) => {
+  if(event.code == 'Escape') {
+    modal_sign_1.classList.remove('active');
+    modal_sign_2.classList.remove('active');
+  }
 });
 /*!
 * Scrolloverflow 2.0.6 module for fullPage.js >= 3
