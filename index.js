@@ -4454,6 +4454,7 @@ const fp = new fullpage('#fullpage', {
 })
 const sign_in = document.querySelector('.sign-in'),
       sign_up = document.querySelector('.sign-up'),
+      exit = Array.from(document.querySelectorAll('.exit')),
       modal_sign_1 = document.querySelector('.modal-sign[data-modal="sign"]'),
       modal_sign_2 = document.querySelector('.modal-reg[data-modal="reg"]');
 
@@ -4463,6 +4464,12 @@ sign_in.addEventListener('click', () => {
 sign_up.addEventListener('click', () => {
   modal_sign_2.classList.add('active');
 })
+for(let el of exit) {
+  el.addEventListener('click', () => {
+    modal_sign_1.classList.remove('active');
+    modal_sign_2.classList.remove('active');
+  })
+}
 
 
 document.addEventListener('keydown', (event) => {
