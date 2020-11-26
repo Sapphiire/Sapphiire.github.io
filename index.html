@@ -10,15 +10,17 @@
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;600;700&amp;display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&amp;display=swap" rel="stylesheet">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <title>seecargo - project</title>
 </head>
 <body>
     <div class="modal modal-sign" data-modal="sign">
+        <a class="exit"><span class="material-icons">
+            close
+            </span></a>
         <form action="" class="form">
             <h2 style="font-size: 2em; align-self: center;">ВХОД</h2>
            
-            <h3>Эл. почта/номер телефона:</h3>
+            <h3>Электронная почта:</h3>
             <input type="email" placeholder="Email" class="email" required>
 
             <h3>Пароль:</h3>
@@ -29,12 +31,15 @@
         </form>
     </div>
     <div class="modal modal-reg" data-modal="reg">
+        <a class="exit"><span class="material-icons">
+            close
+            </span></a>
         <form action="" class="form">
             <h2 style="font-size: 2em; align-self: center;">РЕГИСТРАЦИЯ</h2>
-            <h3>Эл. почта/номер телефона:</h3>
+            <h3>Электронная почта:</h3>
             <input type="email" placeholder="Email" class="email" required>
 
-            <h3>Повторите эл. почту/номер телефона:</h3>
+            <h3>Повторите электронную почту:</h3>
             <input type="email" placeholder="Repeat email" class="email" required>
 
             <h3>Пароль:</h3>
@@ -82,15 +87,10 @@
             <span class="pg-num pg-num-1">1</span>
             <ul class="nav">
                 <li><a href="#" class="sign-in">ВОЙТИ</a></li>
-                <li><a href="#" class="sign-up">
-                    <svg width="188" height="48">
-                       <rect x="4" y="4" rx="5" fill="none" stroke="white" width="180" height="40"></rect>
-                    </svg>
-                      <span>РЕГИСТРАЦИЯ</span>
-                  </a></li>
+                <li><a href="#" class="sign-up">РЕГИСТРАЦИЯ</a></li>
             </ul>
 
-            <img src="/img/blot_1.svg" alt="" class="blot blot_1">
+            <img src="img/blot_1.svg" alt="" class="blot blot_1">
             <img src="img/bg.svg" alt="truck" class="hello__bg">
 
             <div class="content-limit hello">
@@ -100,19 +100,19 @@
                         <p class="column__text text text-hello">Рассчитывай время - 
                             отслеживай груз!</p>
                     </div>
-                    <img src="/img/hello__illustration.svg" alt="" class="cell__img" style="width: 40vw;">
+                    <img src="img/hello__illustration.svg" alt="" class="cell__img" style="width: 40vw;">
                 </div>
             </div>
             
         </section>
         <section class="section">
-            <img src="/img/blot_3.svg" alt="" class="blot blot_2">
-            <img src="/img/blot_4.svg" alt="" class="blot blot_3">
+            <img src="img/blot_3.svg" alt="" class="blot blot_2">
+            <img src="img/blot_4.svg" alt="" class="blot blot_3">
             <span class="pg-num pg-num-2">2</span>
 
             <div class="content-limit about">
                 <div class="cell">
-                    <img src="/img/about__illustration.svg" alt="about" class="cell__img animate__delay-.5s" style="width: 30vw;">
+                    <img src="img/about__illustration.svg" alt="about" class="cell__img animate__delay-.5s" style="width: 30vw;">
                     <div class="column">
                         <h2 class="column__title title">О НАС</h2>
                         <p class="column__text text">Наша компания разработала систему,
@@ -127,8 +127,8 @@
             </div>
         </section>
         <section class="section">
-            <img src="/img/blot_3.svg" alt="" class="blot blot_4">
-            <img src="/img/blot_3.svg" alt="" class="blot blot_5">
+            <img src="img/blot_3.svg" alt="" class="blot blot_4">
+            <img src="img/blot_3.svg" alt="" class="blot blot_5">
             <span class="pg-num pg-num-3">3</span>
 
             <div class="content-limit">
@@ -185,7 +185,7 @@
             </div>
         </section>
         <section class="section">
-            <img src="/img/blot_4.svg" alt="" class="blot blot_6">
+            <img src="img/blot_4.svg" alt="" class="blot blot_6">
             
             <span class="pg-num pg-num-4">4</span>
             <div class="content-limit features">
@@ -227,14 +227,14 @@
                         <h1 class="column__title title">ОСОБЕННОСТИ</h1>
                         <p class="column__text text">Мы хотели бы показать,
                                 почему именно нас вы должны выбирать!</p>
-                        <a href="#rates" class="custom_btn custom_btn-primary" >ВЫБРАТЬ ТАРИФНЫЙ ПЛАН</a>
+                        <a href="#rates" class="custom_btn custom_btn-secondary" >ВЫБРАТЬ ТАРИФНЫЙ ПЛАН</a>
                     </div>
                 </div>
             </div>
         </section>
         <section class="section">
-            <img src="/img/blot_3.svg" alt="" class="blot blot_7">
-            <img src="/img/blot_1.svg" alt="" class="blot blot_8">
+            <img src="img/blot_3.svg" alt="" class="blot blot_7">
+            <img src="img/blot_1.svg" alt="" class="blot blot_8">
             <span class="pg-num pg-num-5">5</span>
            
             <div class="content-limit app">
@@ -244,7 +244,7 @@
                         <p class="column__text text text-app">Используйте мобильное приложение с более гибким интерфейсом. </p>
                         <button class="custom_btn custom_btn-primary" style="padding: 1em 3em;">DOWNLOAD</button>
                         </div>
-                    <img src="/img/app_illustration.svg" alt="app" class="cell__img" style="width: 30vw;">
+                    <img src="img/app_illustration.svg" alt="app" class="cell__img" style="width: 30vw;">
                 </div>
             </div>
         </section>

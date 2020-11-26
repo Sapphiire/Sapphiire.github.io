@@ -74,18 +74,17 @@
   border: none;
   align-self: flex-start;
   font-size: 1em;
-  font-weight: 500;
-  color: #ffffff;
+  font-weight: 700;
+  color: #121212;
   display: inline-block;
+  background: #ff5f89;
   box-shadow: 0 0.2em 1em rgba(0, 0, 0, 0.2);
   border-radius: .2em;
   transition: 0.55s; }
   .custom_btn-primary {
-    padding: 1em 1.3em;
-    background: #ff5f89; }
+    padding: 1em 1.3em; }
   .custom_btn-secondary {
-    padding: 1em 1.5em;
-    background: #7f57fa; }
+    padding: 1em 1.5em; }
   .custom_btn:hover {
     box-shadow: none;
     transform: translateY(0.2em); }
@@ -95,7 +94,7 @@
   font-family: 'Roboto Condensed', sans-serif;
   font-size: 3em;
   font-weight: 700;
-  color: #121212;
+  color: #FFFFFF;
   left: 6vw;
   top: 6vh; }
 
@@ -110,67 +109,26 @@
   .nav > li {
     cursor: pointer;
     font-family: 'Roboto Condensed', sans-serif;
-    font-size: 1.2em;
     font-weight: 600;
     letter-spacing: 1px;
-    color: #ffffff; }
+    color: #FFFFFF;
+    font-size: 1.2em;
+    transition: all .3s; }
+    .nav > li:hover {
+      transform: scale(1.1); }
 
 .sign-in {
-  margin-right: 50px; }
-
-.sign-in {
-  color: #ffffff;
-  text-decoration: none;
-  font-size: 1em;
   position: relative;
-  transition: all 0.5s; }
-  .sign-in:before {
-    content: "";
-    width: 0;
-    height: 3px;
-    position: absolute;
-    bottom: -10px;
-    left: 50%;
-    background: #ffffff;
-    transition: all 0.5s; }
-  .sign-in:hover:before {
-    width: 100%;
-    left: 0;
-    background: #ffffff; }
+  transition: all 0.5s;
+  color: #121212;
+  margin: 0 50px; }
 
 .sign-up {
   position: relative;
-  display: inline-block;
-  margin: 0 50px;
-  font-size: 1em;
-  font-weight: bold;
-  text-align: center;
-  text-transform: uppercase;
-  background-color: transparent;
-  cursor: pointer;
-  text-decoration: none;
-  font-weight: 900;
-  font-size: 17px;
-  letter-spacing: 0.045em; }
-
-.sign-up svg {
-  position: absolute;
-  top: -15px;
-  left: -35px; }
-
-.sign-up svg rect {
-  stroke-width: 3.5;
-  stroke-dasharray: 424, 0;
-  stroke-dashoffset: 250;
-  transition: all .5s; }
-
-.sign-up span {
-  color: white; }
-
-.sign-up:hover svg rect {
-  stroke-width: 3.5;
-  stroke-dasharray: 120, 302;
-  stroke-dashoffset: 180; }
+  padding: .8em 1.6em;
+  background-color: #FFFFFF;
+  border-radius: 2px;
+  color: #121212; }
 
 .btn-submit {
   user-select: none;
@@ -182,7 +140,7 @@
   margin-top: 2em;
   margin-bottom: 3em;
   border: 0;
-  color: #ffffff;
+  color: #171717;
   font-weight: 700;
   font-size: 1.5em;
   border-radius: 10em;
@@ -198,7 +156,7 @@
   background: #ff5f89; }
 
 .btn-sign {
-  background: #7f57fa; }
+  background: #ff5f89; }
 
 .btn-forget {
   align-self: flex-start;
@@ -206,7 +164,7 @@
   cursor: pointer; }
 
 .terms {
-  color: #665EFF;
+  color: #835afa;
   text-decoration: underline; }
   .terms:hover {
     opacity: .5; }
@@ -214,6 +172,15 @@
 .check_circle {
   font-size: 1.2em;
   color: #ff5f89; }
+
+.exit {
+  cursor: pointer;
+  position: absolute;
+  top: 5vh;
+  right: 5vh;
+  color: #FFFFFF; }
+  .exit span {
+    font-size: 4em; }
 
 .icons {
   position: fixed;
@@ -224,12 +191,11 @@
   right: 6vw;
   z-index: 2; }
   .icons svg {
-    fill: #43425D;
     height: 2.2vh; }
 
 .icon {
   position: relative;
-  fill: #6C63FF;
+  fill: #FFFFFF;
   width: 100%;
   height: 100%;
   transition: all .5s; }
@@ -246,7 +212,7 @@
 .pg-dwn {
   width: 50px;
   height: 30px;
-  fill: #43425D;
+  fill: #FFFFFF;
   margin-left: -25px;
   margin-bottom: 20px;
   left: 50%;
@@ -262,7 +228,7 @@
   font-size: 4em;
   font-family: 'Roboto Condensed', sans-serif;
   font-weight: 900;
-  color: #121212;
+  color: #FFFFFF;
   left: 6%;
   bottom: 12%;
   z-index: 3;
@@ -407,7 +373,7 @@ html.fp-enabled,
   z-index: -2;
   width: 27px;
   height: 4px;
-  background-color: #43425D;
+  background-color: #835afa;
   border-radius: 50px;
   transition: 1.5s all cubic-bezier(0.35, 0.26, 0, 1); }
 
@@ -419,7 +385,7 @@ html.fp-enabled,
   position: absolute;
   width: 0px;
   height: 4px;
-  background-color: #FF4F9A;
+  background-color: #ff5f89;
   border-radius: 50px;
   transition: 1.5s all cubic-bezier(0.35, 0.26, 0, 1); }
 
@@ -465,15 +431,15 @@ body {
   border: 0;
   font-size: 12px;
   font-family: 'Roboto', sans-serif;
-  color: #43425D;
-  background-color: #ffffff; }
+  color: #FFFFFF;
+  background-color: #121212; }
 
 p {
   position: relative; }
 
 *::selection {
-  color: #ffffff;
-  background-color: #43425D; }
+  color: #121212;
+  background-color: #FFFFFF; }
 
 img {
   user-select: none; }
@@ -496,16 +462,17 @@ svg path {
 .text {
   line-height: 24px;
   font-weight: 300;
-  color: #A4A3B5;
+  color: #FFFFFF;
+  opacity: .87;
   padding: 10px 0px 10px 0; }
   .text-hello {
     width: 200px;
     font-family: 'Roboto Condensed', sans-serif;
     font-weight: 400;
     font-size: 1.4em;
-    color: #43425D;
     margin: 10px 0 0 0;
-    padding: 0; }
+    padding: 0;
+    opacity: 1; }
   .text-feature {
     text-align: center;
     font-weight: 400;
@@ -538,7 +505,7 @@ svg path {
       top: 50%;
       width: 80px;
       height: 2px;
-      background-color: #43425D;
+      background-color: #FFFFFF;
       display: inline-block;
       border-radius: 100px;
       vertical-align: middle;
@@ -565,7 +532,8 @@ svg path {
     padding: 1.5em;
     border: 0;
     border-radius: .5em;
-    background-color: #F6F6F8;
+    background-color: #262626;
+    color: #FFFFFF;
     font-size: 1.2em; }
     .form > input:focus, .form > input:hover {
       outline: none; }
@@ -575,32 +543,16 @@ svg path {
       opacity: 1;
       transition: all .3s; }
 
-.overlay.active {
-  opacity: 1;
-  visibility: visible; }
-
-.overlay {
-  opacity: 0;
-  visibility: hidden;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  background-color: rgba(0, 0, 0, 0.4);
-  z-index: 20;
-  transition: .3s all; }
-
 .modal.active {
   top: 50vh; }
 
 .modal {
   position: fixed;
-  top: 152vh;
+  top: 250vh;
   left: 50vw;
   transform: translate(-50%, -50%);
   z-index: 30;
-  background-color: #fff;
+  background-color: #121212;
   transition: 0.75s all cubic-bezier(0.35, 0.26, 0, 1);
   display: flex;
   justify-content: center;
@@ -943,12 +895,13 @@ template {
     height: 60vh; }
 
 .rate {
+  user-select: none;
   font-family: 'Roboto Condensed';
   position: relative;
   width: 100%;
   height: 100%;
   box-shadow: 1em 1em 2em rgba(0, 0, 0, 0.05);
-  background-color: #FFFFFF;
+  background-color: #262626;
   border-radius: 0.2em;
   transition: 1.5s all cubic-bezier(0.35, 0.26, 0, 1);
   padding: 10%;
@@ -971,6 +924,7 @@ template {
     .rate__price span:first-child {
       font-size: 3.5em; }
   .rate__description {
+    opacity: .87;
     display: flex;
     flex-direction: row; }
     .rate__description span:first-child {
@@ -980,16 +934,13 @@ template {
     align-self: center;
     bottom: 2em;
     font-weight: 700;
-    color: #ffffff;
-    background: #43425D;
+    color: #212121;
+    background: #ff5f89;
     padding: .8em 2.5em; }
   .rate-hot {
-    background: #43425D;
-    color: #ffffff;
+    background: #FFFFFF;
+    color: #121212;
     transform: scale(1.1); }
-    .rate-hot a:last-child {
-      color: #43425D;
-      background: #ffffff; }
 
 .rate:hover {
   box-shadow: 1em 1em 2em rgba(0, 0, 0, 0.1);
@@ -1014,9 +965,9 @@ template {
   width: 100%;
   height: 80%;
   background-color: aqua;
-  color: #ff5f89;
+  color: #FFFFFF;
   box-shadow: 1em 1em 2em rgba(0, 0, 0, 0.05);
-  background-color: #FFFFFF;
+  background-color: #1c1c1c;
   border-radius: 5px;
   transition: 1.5s all cubic-bezier(0.35, 0.26, 0, 1);
   display: flex;
@@ -1042,9 +993,9 @@ template {
     font-size: 5em;
     text-shadow: 0 0.2em 1em rgba(0, 0, 0, 0.2); }
   .feature p {
-    color: #43425D;
+    color: #FFFFFF;
     font-weight: 500;
-    opacity: .8;
+    opacity: .87;
     width: 80%; }
 
 .hover_1 {
