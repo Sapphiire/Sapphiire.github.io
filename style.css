@@ -935,11 +935,11 @@ template {
     bottom: 2em;
     font-weight: 700;
     color: #212121;
-    background: #ff5f89;
+    background: white;
     padding: .8em 2.5em; }
   .rate-hot {
-    background: #FFFFFF;
-    color: #121212;
+    color: white;
+    background: #121212;
     transform: scale(1.1); }
 
 .rate:hover {
