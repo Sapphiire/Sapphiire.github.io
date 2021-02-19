@@ -17,6 +17,15 @@
     src: local("Rubik-Medium"), url("/font/Rubik/Rubik-Medium.ttf");
 }
 
+@keyframes modal-animation {
+    0% {
+        left: 100vw;
+    }
+    100% {
+        left: 0vw;
+    }
+}
+
 // variables
 
 $background-color-white: #ffffff;
@@ -120,6 +129,7 @@ h5, h6 {
 .greeting {
     position: relative;
     min-height: 100vh;
+    overflow-x: hidden;
 }
 
 .contact {
@@ -131,6 +141,7 @@ h5, h6 {
 }
 
 .features {
+    position: relative;
     background-color: $background-color-black;
 }
 
@@ -141,6 +152,7 @@ h5, h6 {
 
 .rates {
     position: relative;
+    overflow-x: hidden;
 }
 
 .feature {
@@ -435,6 +447,7 @@ h5, h6 {
 }
 
 .modal-nav {
+    display: none;
     position: fixed;
     width: 100vw;
     height: 100vh;
@@ -442,12 +455,13 @@ h5, h6 {
     left: 100vw;
     z-index: 999;
     background-color: $background-color-black;
-    transition: all .3s ease-out;
+    animation: modal-animation 1s forwards 0s;
 }
 
 .modal-nav.active {
+    display: block;
     left: 0;
-    transition: all .3s ease-in;
+    animation: modal-animation .5s backwards 0s;
 }
 
 .container-nav {
@@ -501,15 +515,13 @@ h5, h6 {
     opacity: 1;
     display: none;
     margin-top: 50px;
+    & .sign-in {
+        margin: 0;
+        padding: 0 20vw;
+    }
     & .sign-up {
         margin: 0;
         padding: 0;
-    }
-}
-.sign-in a {
-    color: $color-black-text;
-    &:hover, &:focus {
-        color: $color-black-text;
     }
 }
 

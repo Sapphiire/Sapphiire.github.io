@@ -14,6 +14,14 @@
   font-family: Rubik-Medium;
   src: local("Rubik-Medium"), url("/font/Rubik/Rubik-Medium.ttf");
 }
+@keyframes modal-animation {
+  0% {
+    left: 100vw;
+  }
+  100% {
+    left: 0vw;
+  }
+}
 *, *:before, *:after {
   box-sizing: border-box;
 }
@@ -95,6 +103,7 @@ h5, h6 {
 .greeting {
   position: relative;
   min-height: 100vh;
+  overflow-x: hidden;
 }
 
 .contact {
@@ -106,6 +115,7 @@ h5, h6 {
 }
 
 .features {
+  position: relative;
   background-color: #121212;
 }
 
@@ -116,6 +126,7 @@ h5, h6 {
 
 .rates {
   position: relative;
+  overflow-x: hidden;
 }
 
 .feature__icon {
@@ -389,6 +400,7 @@ h5, h6 {
 }
 
 .modal-nav {
+  display: none;
   position: fixed;
   width: 100vw;
   height: 100vh;
@@ -396,12 +408,13 @@ h5, h6 {
   left: 100vw;
   z-index: 999;
   background-color: #121212;
-  transition: all 0.3s ease-out;
+  animation: modal-animation 1s forwards 0s;
 }
 
 .modal-nav.active {
+  display: block;
   left: 0;
-  transition: all 0.3s ease-in;
+  animation: modal-animation 0.5s backwards 0s;
 }
 
 .container-nav {
@@ -454,16 +467,13 @@ h5, h6 {
   display: none;
   margin-top: 50px;
 }
+.sign-modal .sign-in {
+  margin: 0;
+  padding: 0 20vw;
+}
 .sign-modal .sign-up {
   margin: 0;
   padding: 0;
-}
-
-.sign-in a {
-  color: #121212;
-}
-.sign-in a:hover, .sign-in a:focus {
-  color: #121212;
 }
 
 @media (max-width: 991.98px) {
