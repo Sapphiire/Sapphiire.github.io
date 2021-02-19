@@ -24,3 +24,4 @@ document.addEventListener('keydown', (e) => {
         burger_menu.innerHTML = "menu"
     }
 })
+
