@@ -40,6 +40,7 @@ body {
   font-size: 14px;
   font-family: Rubik-Regular;
   overflow-x: hidden;
+  position: relative;
 }
 
 a {
@@ -358,7 +359,7 @@ h5, h6 {
   cursor: pointer;
   z-index: 999;
   user-select: none;
-  position: fixed;
+  position: absolute;
   top: calc(7.5vh - 12px);
   left: calc(50vw - 18px);
 }
