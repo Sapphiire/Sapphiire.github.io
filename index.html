@@ -3,248 +3,430 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;600;700&amp;display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&amp;display=swap" rel="stylesheet">
-    <title>seecargo - project</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="/css/style.css">
+   
+    <title>sc</title>
 </head>
 <body>
-    <div class="modal modal-sign" data-modal="sign">
-        <a class="exit"><span class="material-icons">
-            close
-            </span></a>
-        <form action="" class="form">
-            <h2 style="font-size: 2em; align-self: center;">ВХОД</h2>
-           
-            <h3>Электронная почта:</h3>
-            <input type="email" placeholder="Email" class="email" required>
 
-            <h3>Пароль:</h3>
-            <input type="password" placeholder="Password" class="password" required>
-
-            <h3 class="btn-forget">Забыли пароль?</h3>
-            <button class="btn-submit btn-sign">ВОЙТИ</button>
-        </form>
-    </div>
-    <div class="modal modal-reg" data-modal="reg">
-        <a class="exit"><span class="material-icons">
-            close
-            </span></a>
-        <form action="" class="form">
-            <h2 style="font-size: 2em; align-self: center;">РЕГИСТРАЦИЯ</h2>
-            <h3>Электронная почта:</h3>
-            <input type="email" placeholder="Email" class="email" required>
-
-            <h3>Повторите электронную почту:</h3>
-            <input type="email" placeholder="Repeat email" class="email" required>
-
-            <h3>Пароль:</h3>
-            <input type="password" placeholder="Password" class="password" required>
-
-            <div style="margin-top:1em;">
-                <input type="checkbox" id="accept-terms" required>
-                <label for="" class="accept-terms">
-                    Я соглашаюсь с 
-                    <a href="#" class="terms">Правилами пользования</a>
-                    и 
-                    <a href="#" class="terms">Политикой Конфиденциальности</a>
-                </label>
+    <!-- modal navigation -->
+    <div class="modal-nav">
+        <div class="container-xl container-nav">
+            <div class="row align-items-center">
+                <nav class="col">
+                    <a href="#greeting" class="nav__item">Главная</a>
+                    <a href="#about" class="nav__item">О нас</a>
+                    <a href="#hiw" class="nav__item">Как это работает?</a>
+                    <a href="#rates" class="nav__item">Тарифы</a>
+                    <div class="nav__item row align-items-center justify-content-end sign-modal">
+                        <div class="row justify-content-center sign-up">
+                            <a href="#" class="col-auto">Регистрация</a>
+                        </div>
+                        
+                        <div class="row justify-content-center sign-in blue-btn">
+                            <a href="#" class="col-auto">Войти</a>
+                        </div>
+                    </div>
+                </nav>
             </div>
-            
-            <button class="btn-submit btn-reg">ЗАРЕГИСТРИРОВАТЬСЯ</button>
-        </form>
+        </div>
     </div>
+    <div class="menu">
+        <span class="material-icons">menu</span>
+    </div>
+
+    <!-- greeting -->
+    <div id="greeting" class="container-fluid greeting">
+        <div class="bg bg-greeting row align-items-center">
+            <h2 class="bg__title bg__title-greeting">
+                отсле<br>живай
+            </h2>
+        </div>
+        <header class="container-xl header">
+            <div class="row align-items-center justify-content-between">
+                <h2 class="col-auto header__logo">
+                    <a href="#greeting" class="col-auto logo">sc.</a>
+                </h2>
+                <div class="col-auto row align-items-center justify-content-end sign">
+                    <a href="#" class="col-auto sign-up">Регистрация</a>
+                    <a href="#" class="col-auto sign-in blue-btn">Войти</a>
+                </div>
+            </div>
+        </header>
+
+        <main class="container-fluid container-greeting">
+            <div class="row align-items-center justify-content-between">
+                <div class="col-lg-7 text-center container-greeting__img">
+                    <img src="/img/art.png" alt="" class="img-fluid">
+                </div>
+                <div class="col-lg-5 container-greeting__info">
+                    <h1 class="row title title-greeting">SEE<br>URCARGO</h1>
+                    <h4 class="row slogan">Отслеживай груз -<br>рассчитывай время.</h4>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- about -->
+    <div class="container-fluid about">
+        <div class="bg bg-about row">
+            <h2 class="col-auto bg__title bg__title-about">
+                02
+            </h2>
+        </div>
+
+        <div class="container-xl container-about">
+            <h2 id="about" class="row title title-about">
+                О НАС
+            </h2>
+            <p class="row text text-about">
+                Наша компания является разработчиком системы, позволяющей определять 
+                местоположение транспортного средства в каждый момент доставки груза.
+            </p>
+            <div class="row btn-about">
+                <a href="#" class="col-auto blue-btn join-in">ПРИСОЕДИНИТЬСЯ</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- features -->
+    <div class="container-fluid features">
+        <div class="container-xl container-features">
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 align-self-center">
+                <div class="col">
+                    <div class="row align-items-center feature">
+                        <div class="col-auto">
+                            <img src="/img/USER-ICON.svg" alt="" class="feature__icon">
+                        </div>
+                        <div class="col feature__info">
+                            <h4 class="row title-icon">USER</h4>
+                            <p class="row text-icon">fj ojd ofos djos djofsofsjo jo jo fdsjo fdjo fdsjo fds</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="row align-items-center feature">
+                        <div class="col-auto">
+                            <img src="/img/SETTING-ICON.svg" alt="" class="feature__icon">
+                        </div>
+                        <div class="col feature__info">
+                            <h4 class="row title-icon">SETTINGS</h4>
+                            <p class="row text-icon">fj ojd ofos djos djofsofsjo jo jo fdsjo fdjo fdsjo fds</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="row align-items-center feature">
+                        <div class="col-auto">
+                            <img src="/img/CLOCK-ICON.svg" alt="" class="feature__icon">
+                        </div>
+                        <div class="col feature__info">
+                            <h4 class="row title-icon">CLOCK</h4>
+                            <p class="row text-icon">fj ojd ofos djos djofsofsjo jo jo fdsjo fdjo fdsjo fds</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="row align-items-center feature">
+                        <div class="col-auto">
+                            <img src="/img/WIRELESS-ICON.svg" alt="" class="feature__icon">
+                        </div>
+                        <div class="col feature__info">
+                            <h4 class="row title-icon">WIRELESS</h4>
+                            <p class="row text-icon">fj ojd ofos djos djofsofsjo jo jo fdsjo fdjo fdsjo fds</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- video -->
+    <div id="hiw" class="container-fluid hiw">
+        <div class="bg bg-hiw row">
+            <h2 class="col-auto bg__title bg__title-hiw">КАК ЭТО РАБОТАЕТ?</h2>
+        </div>
+
+        <div class="container-sm container-hiw">
+
+        </div>
+    </div>
+
+    <!-- rates -->
+    <div class="container-fluid rates">
+        <div class="bg bg-rates row">
+            <h2 class="col-auto bg__title bg__title-rates">
+                04
+            </h2>
+        </div>
+
+        <div class="container-xl container-rates">
+            <div class="row justify-content-end">
+                <h2 id="rates" class="col-auto title title-rates">ТАРИФЫ</h2>
+            </div>
+            <div class="row rates-table">
+                <div class="rate">
+                    <div class="rate shadow">
+                        <div class="row justify-content-center">
+                            <h6 class="col-auto rate__title">
+                                STANDART
+                            </h6>
+                        </div>
+                        
+                        <div class="row justify-content-center">
+                            <h6 class="col-auto rate__price">
+                                FREE$
+                            </h6>
+                        </div>
     
-    <div class="icons">
-        <a class="icon-bg" href="#">
-            <svg class="icon" id="instagram" xmlns="http://www.w3.org/2000/svg" width="20.099" height="20.1" viewBox="0 0 20.099 20.1">
-            <path id="Контур_443" data-name="Контур 443" d="M2.58,0H17.52A2.519,2.519,0,0,1,20.1,2.58V17.52a2.519,2.519,0,0,1-2.58,2.58H2.58A2.519,2.519,0,0,1,0,17.52V2.58A2.519,2.519,0,0,1,2.58,0ZM14.642,2.233a.907.907,0,0,0-.9.9V5.3a.907.907,0,0,0,.9.9h2.272a.908.908,0,0,0,.9-.9V3.138a.907.907,0,0,0-.9-.9ZM17.828,8.5H16.059a5.879,5.879,0,0,1,.258,1.724,6.153,6.153,0,0,1-6.248,6.053,6.153,6.153,0,0,1-6.247-6.053A5.869,5.869,0,0,1,4.08,8.5H2.234v8.49a.8.8,0,0,0,.8.8h14a.8.8,0,0,0,.8-.8V8.5ZM10.069,6.095a3.976,3.976,0,0,0-4.037,3.911,3.976,3.976,0,0,0,4.037,3.911,3.976,3.976,0,0,0,4.037-3.911A3.976,3.976,0,0,0,10.069,6.095Z" fill="#6c63ff"/>
-          </svg>
-          </a>
-        <a class="icon-bg" href="#">
-            <svg class="icon" id="twitter" xmlns="http://www.w3.org/2000/svg" width="24.676" height="20.1" viewBox="0 0 24.676 20.1">
-            <path id="Контур_442" data-name="Контур 442" d="M24.647,11.447a.122.122,0,0,0-.144-.033,9.87,9.87,0,0,1-2.313.7A5.13,5.13,0,0,0,24,9.579a.122.122,0,0,0-.179-.143,9.894,9.894,0,0,1-3.078,1.188A5.14,5.14,0,0,0,12,15.2,14.159,14.159,0,0,1,1.918,10.015a.12.12,0,0,0-.1-.045.122.122,0,0,0-.1.06,5.141,5.141,0,0,0,1.238,6.6,4.908,4.908,0,0,1-1.792-.579.123.123,0,0,0-.182.1v.066A5.152,5.152,0,0,0,4.59,21.126,4.932,4.932,0,0,1,2.883,21.1a.122.122,0,0,0-.14.157A5.134,5.134,0,0,0,7.2,24.807a9.869,9.869,0,0,1-5.883,1.918,10.156,10.156,0,0,1-1.181-.069.124.124,0,0,0-.13.08.123.123,0,0,0,.049.145,14.328,14.328,0,0,0,7.75,2.272A14.245,14.245,0,0,0,22.189,14.769q0-.3-.012-.588a10.24,10.24,0,0,0,2.477-2.587A.123.123,0,0,0,24.647,11.447Z" transform="translate(0 -9.053)" fill="#6c63ff"/>
-          </svg>
-          </a>
-        <a class="icon-bg" href="#">
-            <svg class="icon" id="youtube" xmlns="http://www.w3.org/2000/svg" width="29.331" height="20.103" viewBox="0 0 29.331 20.103">
-            <path id="Контур_444" data-name="Контур 444" d="M28.824,17.91a3.684,3.684,0,0,0-3.171-2.834,100.215,100.215,0,0,0-10.983-.4,100.231,100.231,0,0,0-10.984.4A3.683,3.683,0,0,0,.517,17.91,30.385,30.385,0,0,0,0,24.728a30.376,30.376,0,0,0,.511,6.817,3.682,3.682,0,0,0,3.17,2.834,100.144,100.144,0,0,0,10.984.4,100.123,100.123,0,0,0,10.983-.4,3.684,3.684,0,0,0,3.17-2.834,30.362,30.362,0,0,0,.513-6.817A30.38,30.38,0,0,0,28.824,17.91ZM10.88,29.2V19.666l9.325,4.784Z" transform="translate(0 -14.676)" fill="#6c63ff"/>
-          </svg>
-          </a>
-    </div>
-    <svg onClick="fullpage_api.moveSectionDown()" class="pg-dwn" id="page_down" xmlns="http://www.w3.org/2000/svg" width="61.735" height="36.735" viewBox="0 0 61.735 36.735">
-        <path d="M4.459.639,37.093-1.243a3.792,3.792,0,0,1,4.1,4.1,5.01,5.01,0,0,1-4.6,4.6L3.957,9.342a3.792,3.792,0,0,1-4.1-4.1A5.01,5.01,0,0,1,4.459.639Z" transform="translate(6.718 0.991) rotate(45)" fill="#6c63ff"/>
-        <path d="M4.61,8.71l32.634,1.883a3.792,3.792,0,0,0,4.1-4.1,5.01,5.01,0,0,0-4.6-4.6L4.108.007a3.792,3.792,0,0,0-4.1,4.1A5.01,5.01,0,0,0,4.61,8.71Z" transform="translate(61.735 7.495) rotate(135)" fill="#6c63ff"/>
-    </svg>
-      
-    <main id="fullpage">
-        <section class="section active">
-            <a href="#" class="logo">sc.</a>
-            <span class="pg-num pg-num-1">1</span>
-            <ul class="nav">
-                <li><a href="#" class="sign-in">ВОЙТИ</a></li>
-                <li><a href="#" class="sign-up">РЕГИСТРАЦИЯ</a></li>
-            </ul>
-
-            <img src="img/blot_1.svg" alt="" class="blot blot_1">
-            <img src="img/bg.svg" alt="truck" class="hello__bg">
-
-            <div class="content-limit hello">
-                <div class="cell">
-                    <div class="column">
-                        <h1 class="column__title title">Название</h1>
-                        <p class="column__text text text-hello">Здесь должен быть слоган!</p>
-                    </div>
-                    <img src="img/hello__illustration.svg" alt="" class="cell__img" style="width: 40vw;">
-                </div>
-            </div>
-            
-        </section>
-        <section class="section">
-            <img src="img/blot_3.svg" alt="" class="blot blot_2">
-            <img src="img/blot_4.svg" alt="" class="blot blot_3">
-            <span class="pg-num pg-num-2">2</span>
-
-            <div class="content-limit about">
-                <div class="cell">
-                    <img src="img/about__illustration.svg" alt="about" class="cell__img animate__delay-.5s" style="width: 30vw;">
-                    <div class="column">
-                        <h2 class="column__title title">О НАС</h2>
-                        <p class="column__text text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed 
-                            do eiusmod tempor incididunt ut labore et dolore magna aliqua. Morbi blandit cursus 
-                            risus at. Curabitur vitae nunc sed velit dignissim sodales ut. Semper quis lectus nulla 
-                            at volutpat diam ut.</p>
-                            <a href="#hello" class="custom_btn custom_btn-primary">ПРИСТУПИТЬ К РАБОТЕ</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="section">
-            <img src="img/blot_3.svg" alt="" class="blot blot_4">
-            <img src="img/blot_3.svg" alt="" class="blot blot_5">
-            <span class="pg-num pg-num-3">3</span>
-
-            <div class="content-limit">
-                <h2 class="title title-rates">ТАРИФЫ</h2>
-                <div class="rates_list">
-                    <div class="rate">
-                        <h2 class="rate__title">БЕСПЛАТНЫЙ</h2>
-                        <div class="rate__price"><span>FREE $</span></div>
-                        <ul>
-                            <li class="rate__description"><span class="material-icons check_circle">
-                                check_circle</span><span>1 месяц пользования</span></li>
-                            <li class="rate__description"><span class="material-icons check_circle">
-                                check_circle</span><span>-------------------------------------</span></li>
-                        </ul>
-                        <a href="#" class="rate__purchase custom_btn">ВЫБРАТЬ ТАРИФ</a>
-                    </div>
-                    <div class="rate rate-hot">
-                        <h2 class="rate__title">STANDART</h2>
-                        <div class="rate__price"><span><sup>$</sup>10</span><span>/в месяц</span></div>
-                        <ul>
-                            <li class="rate__description"><span class="material-icons check_circle">
-                                check_circle</span><span>1 месяц пользования</span></li>
-                            <li class="rate__description"><span class="material-icons check_circle">
-                                check_circle</span><span>>-------------------------------------</span></li>
-                        </ul>
-                        <a href="#" class="rate__purchase custom_btn">ВЫБРАТЬ ТАРИФ</a>
-                    </div>
-                    <div class="rate">
-                        <h2 class="rate__title">PREMIUM</h2>
-                        <div class="rate__price"><span><sup>$</sup>20</span><span>/в месяц</span></div>
-                        <ul>
-                            <li class="rate__description"><span class="material-icons check_circle">
-                                check_circle</span><span>1 месяц пользования</span></li>
-                            <li class="rate__description"><span class="material-icons check_circle">
-                                check_circle</span><span>>-------------------------------------</span></li>
-                        </ul>
-                        <a href="#" class="rate__purchase custom_btn">ВЫБРАТЬ ТАРИФ</a>
-                    </div>
-                    <div class="rate">
-                        <h2 class="rate__title">UNLIMITED</h2>
-                        <div class="rate__price"><span><sup>$</sup>40</span><span>/в месяц</span></div>
-                        <ul>
-                            <li class="rate__description"><span class="material-icons check_circle">
-                                check_circle</span><span>1 месяц пользования</span></li>
-                            <li class="rate__description"><span class="material-icons check_circle">
-                                check_circle</span><span>>-------------------------------------</span></li>
-                        </ul>
-                        <a href="#" class="rate__purchase custom_btn">ВЫБРАТЬ ТАРИФ</a>
-                    </div>
-                </div>
-                <h2 class="title title-rates"></h2>
-            </div>
-        </section>
-        <section class="section">
-            <img src="img/blot_4.svg" alt="" class="blot blot_6">
-            
-            <span class="pg-num pg-num-4">4</span>
-            <div class="content-limit features">
-                <div class="cell">
-                    <div class="features_table">
-                        <div class="feature">
-                            <span class="material-icons feature-icon">
-                                people_alt
-                                </span>
-                                <p class="text-feature">Lorem ipsum dolor sit amet</p>
+                        <div class="row rate__info">
+                            <div class="row">
+                                <img src="/img/check.svg" alt="" class="col-auto img-icon">
+                                <p class="col">до <strong>3</strong> отслеживаний
+                                    транспорта в сутки</p> 
+                            </div>
                         </div>
-                        <img src="./img/blot_1.svg" alt="" class="feature__hover feature__hover-1 hover_1">
-                        <div class="feature">
-                            <span class="material-icons feature-icon">
-                                wifi
-                                </span>
-                                <p class="text-feature">consectetur adipiscing elit, sed do eiusmod</p>
-                        
-                        </div>
-                        <img src="./img/blot_1.svg" alt="" class="feature__hover feature__hover-2 hover_2">
-                        <div class="feature">
-                            <span class="material-icons feature-icon">
-                                gps_fixed
-                                </span>
-                                <p class="text-feature">urabitur vitae nunc sed veli</p>
-                        
-                        </div>
-                        <img src="./img/blot_1.svg" alt="" class="feature__hover feature__hover-1 hover_3">
-                        <div class="feature">
-                            <span class="material-icons feature-icon">
-                                router
-                                </span>
-                                <p class="text-feature">non pulvinar neque. Turpis nunc</p>
-                        
-                        </div>
-                        <img src="./img/blot_1.svg" alt="" class="feature__hover feature__hover-2 hover_4">
-                    </div>
-                    <div class="column">
-                        <h1 class="column__title title">ПРЕИМУЩЕСТВА</h1>
-                        <p class="column__text text">Мы хотели бы показать,
-                                почему именно нас вы должны выбирать!</p>
-                        <a href="#rates" class="custom_btn custom_btn-secondary" >ВЫБРАТЬ ТАРИФНЫЙ ПЛАН</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="section">
-            <img src="img/blot_3.svg" alt="" class="blot blot_7">
-            <img src="img/blot_1.svg" alt="" class="blot blot_8">
-            <span class="pg-num pg-num-5">5</span>
-           
-            <div class="content-limit app">
-                <div class="cell">
-                    <div class="column">
-                        <h1 class="column__title title">ПРИЛОЖЕНИЕ</h1>
-                        <p class="column__text text text-app">Используйте мобильное приложение с более гибким интерфейсом. </p>
-                        <button class="custom_btn custom_btn-primary" style="padding: 1em 3em;">DOWNLOAD</button>
-                        </div>
-                    <img src="img/app_illustration.svg" alt="app" class="cell__img" style="width: 30vw;">
-                </div>
-            </div>
-        </section>
-    </main>
     
-    <script type="text/javascript" src="index.js"></script>
+                        <a href="" class="row justify-content-center rate__purchase">
+                            <span class="col-auto">КУПИТЬ ТАРИФ</span>
+                        </a>
+                    </div>
+
+                    <div class="row justify-content-center">
+                        <h6 class="col-auto rate__title">
+                            БЕСПЛАТНЫЙ
+                        </h6>
+                    </div>
+                    
+                    <div class="row justify-content-center">
+                        <h6 class="col-auto rate__price">
+                            FREE$
+                        </h6>
+                    </div>
+
+                    <div class="row rate__info">
+                        <div class="row">
+                            <img src="/img/check.svg" alt="" class="col-auto img-icon">
+                            <p class="col">до <strong>3</strong> отслеживаний
+                                транспорта в сутки</p> 
+                        </div>
+                    </div>
+
+                    <a href="" class="row justify-content-center rate__purchase">
+                        <span class="col-auto">КУПИТЬ ТАРИФ</span>
+                    </a>
+                </div>
+                <div class="rate rate-white">
+                    <div class="rate-white shadow">
+                        <div class="row justify-content-center">
+                            <h6 class="col-auto rate__title">
+                                STANDART
+                            </h6>
+                        </div>
+                        
+                        <div class="row justify-content-center">
+                            <h6 class="col-auto rate__price">
+                                <span><sup>$</sup></span><span>10</span><span>/в месяц</span>
+                            </h6>
+                        </div>
+    
+                        <div class="row rate__info">
+                            <div class="row">
+                                <img src="/img/check.svg" alt="" class="col-auto img-icon">
+                                <p class="col">1 месяц использования</p> 
+                            </div>
+    
+                            <div class="row">
+                                <img src="/img/check.svg" alt="" class="col-auto img-icon">
+                                <p class="col">до <strong>10</strong> отслеживаний
+                                    транспорта в сутки</p> 
+                            </div>
+                        </div>
+    
+                        <a href="" class="row justify-content-center rate__purchase">
+                            <span class="col-auto">КУПИТЬ ТАРИФ</span>
+                        </a>
+                    </div>
+                    <div class="row justify-content-center">
+                        <h6 class="col-auto rate__title">
+                            STANDART
+                        </h6>
+                    </div>
+                    
+                    <div class="row justify-content-center">
+                        <h6 class="col-auto rate__price">
+                            <span><sup>$</sup></span><span>10</span><span>/в месяц</span>
+                        </h6>
+                    </div>
+
+                    <div class="row rate__info">
+                        <div class="row">
+                            <img src="/img/check.svg" alt="" class="col-auto img-icon">
+                            <p class="col">1 месяц использования</p> 
+                        </div>
+
+                        <div class="row">
+                            <img src="/img/check.svg" alt="" class="col-auto img-icon">
+                            <p class="col">до <strong>10</strong> отслеживаний
+                                транспорта в сутки</p> 
+                        </div>
+                    </div>
+
+                    <a href="" class="row justify-content-center rate__purchase">
+                        <span class="col-auto">КУПИТЬ ТАРИФ</span>
+                    </a>
+                </div>
+                <div class="rate">
+                    <div class="rate shadow">
+                        <div class="row justify-content-center">
+                            <h6 class="col-auto rate__title">
+                                STANDART
+                            </h6>
+                        </div>
+                        
+                        <div class="row justify-content-center">
+                            <h6 class="col-auto rate__price">
+                                FREE$
+                            </h6>
+                        </div>
+    
+                        <div class="row rate__info">
+                            <div class="row">
+                                <img src="/img/check.svg" alt="" class="col-auto img-icon">
+                                <p class="col">до <strong>3</strong> отслеживаний
+                                    транспорта в сутки</p> 
+                            </div>
+                        </div>
+    
+                        <a href="" class="row justify-content-center rate__purchase">
+                            <span class="col-auto">КУПИТЬ ТАРИФ</span>
+                        </a>
+                    </div>
+                    <div class="row justify-content-center">
+                        <h6 class="col-auto rate__title">
+                            PREMIUM
+                        </h6>
+                    </div>
+                    
+                    <div class="row justify-content-center">
+                        <h6 class="col-auto rate__price">
+                            <span><sup>$</sup></span><span>20</span><span>/в месяц</span>
+                        </h6>
+                    </div>
+
+                    <div class="row rate__info">
+                        <div class="row">
+                            <img src="/img/check.svg" alt="" class="col-auto img-icon">
+                            <p class="col">1 месяц использования</p> 
+                        </div>
+
+                        <div class="row">
+                            <img src="/img/check.svg" alt="" class="col-auto img-icon">
+                            <p class="col">до <strong>20</strong> отслеживаний
+                                транспорта в сутки</p> 
+                        </div>
+                    </div>
+
+                    <a href="" class="row justify-content-center rate__purchase">
+                        <span class="col-auto">КУПИТЬ ТАРИФ</span>
+                    </a>
+                </div>
+                <div class="rate">
+                    <div class="rate shadow">
+                        <div class="row justify-content-center">
+                            <h6 class="col-auto rate__title">
+                                UNLIMITED
+                            </h6>
+                        </div>
+                        
+                        <div class="row justify-content-center">
+                            <h6 class="col-auto rate__price">
+                                <span><sup>$</sup></span><span>40</span><span>/в месяц</span>
+                            </h6>
+                        </div>
+    
+                        <div class="row rate__info">
+                            <div class="row">
+                                <img src="/img/check.svg" alt="" class="col-auto img-icon">
+                                <p class="col">1 месяц использования</p> 
+                            </div>
+    
+                            <div class="row">
+                                <img src="/img/check.svg" alt="" class="col-auto img-icon">
+                                <p class="col"><strong>НЕОГРАНИЧЕННОЕ КОЛИЧЕСТВО</strong> отслеживаний
+                                    транспорта в сутки</p> 
+                            </div>
+                        </div>
+    
+                        <a href="" class="row justify-content-center rate__purchase">
+                            <span class="col-auto">КУПИТЬ ТАРИФ</span>
+                        </a>
+                    </div>
+                    <div class="row justify-content-center">
+                        <h6 class="col-auto rate__title">
+                            UNLIMITED
+                        </h6>
+                    </div>
+                    
+                    <div class="row justify-content-center">
+                        <h6 class="col-auto rate__price">
+                            <span><sup>$</sup></span><span>40</span><span>/в месяц</span>
+                        </h6>
+                    </div>
+
+                    <div class="row rate__info">
+                        <div class="row">
+                            <img src="/img/check.svg" alt="" class="col-auto img-icon">
+                            <p class="col">1 месяц использования</p> 
+                        </div>
+
+                        <div class="row">
+                            <img src="/img/check.svg" alt="" class="col-auto img-icon">
+                            <p class="col"><strong>НЕОГРАНИЧЕННОЕ КОЛИЧЕСТВО</strong> отслеживаний
+                                транспорта в сутки</p> 
+                        </div>
+                    </div>
+
+                    <a href="" class="row justify-content-center rate__purchase">
+                        <span class="col-auto">КУПИТЬ ТАРИФ</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <footer class="container-fluid footer">
+        <div class="container-xl container-footer">
+            <div class="row justify-content-between">
+                <div class="col-auto col-lg-auto col-md-12">
+                    <h2 class="row logo footer__logo">
+                        <a href="#greeting" class="col-auto logo">sc.</a>
+                    </h2>
+                    <p class="row footer__info">
+                        <div class="col-auto">
+                            Copyrighted 2021 by OOO SeeUrCargo
+                        </div>
+                    </p>
+                </div>
+                <div class="col-auto row align-items-center contacts">
+                    <div class="row email">
+                        <img src="/img/mail.svg" alt="" class="col-auto img-icon">
+                        <a class="col">zakharovvadzim@yandex.by</a> 
+                    </div>
+                    <div class="row phone">
+                        <img src="/img/phone.svg" alt="" class="col-auto img-icon">
+                        <a class="col">+375295784829</a> 
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <script src="/js/index.js"></script>
 </body>
 </html>
