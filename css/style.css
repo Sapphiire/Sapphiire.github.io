@@ -40,6 +40,7 @@ body {
   font-size: 14px;
   font-family: Rubik-Regular;
   overflow-x: hidden;
+  position: relative;
 }
 
 a {
