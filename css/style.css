@@ -140,6 +140,7 @@ h5, h6 {
 }
 
 .feature__icon {
+  user-select: none;
   margin-top: -1em;
   color: linear-gradient();
   height: 4em;
@@ -358,7 +359,7 @@ h5, h6 {
   cursor: pointer;
   z-index: 999;
   user-select: none;
-  position: fixed;
+  position: absolute;
   top: calc(7.5vh - 12px);
   left: calc(50vw - 18px);
 }
@@ -791,6 +792,11 @@ h5, h6 {
     left: calc(50vw - 36px);
     font-size: 48px;
     height: 48px;
+  }
+}
+@media (max-width: 1200px) {
+  .greeting {
+    min-height: 10vh;
   }
 }
 

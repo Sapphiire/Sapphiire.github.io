@@ -170,6 +170,7 @@ h5, h6 {
 
 .feature {
     &__icon {
+        user-select: none;
         margin-top: -1em;
         color: linear-gradient();
         height: 4em;
@@ -399,7 +400,7 @@ h5, h6 {
         cursor: pointer;
         z-index: 999;
         user-select: none;
-        position: fixed;
+        position: absolute;
         top: calc(7.5vh - 12px);
         left: calc(50vw - 18px);
     }
@@ -603,6 +604,7 @@ h5, h6 {
         font-size: 18px;
     }
     .feature__icon {
+        
         margin-right: 15px;
         height: 64px;
     }
@@ -660,6 +662,7 @@ h5, h6 {
         font-size: 14px;
     }
     .feature__icon {
+        
         margin-right: 0px;
         height: 56px;
     }
@@ -823,5 +826,11 @@ h5, h6 {
         left: calc(50vw - 36px);
         font-size: 48px;
         height: 48px;
+    }
+}
+
+@media(max-width: 1200px) {
+    .greeting {
+        min-height: 10vh;
     }
 }
