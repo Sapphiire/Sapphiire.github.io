@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/loading.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/css/index(media).css">
+
     <link type="image/x-icon" rel="shortcut icon" href="img/favicon.png">
     <link type="image/png" sizes="16x16" rel="icon" href="img/favicon.png">
     <link type="image/png" sizes="32x32" rel="icon" href="img/favicon.png">
@@ -39,15 +40,6 @@
 </head>
 <body>
 
-    <!-- loading -->
-    <div class="loading">
-        <div class="container">
-            <div class="row align-items-center justify-content-center">
-                <div class="col-auto">sc.</div>
-            </div>
-        </div>
-    </div>
-
     <!-- modal navigation -->
     <div class="modal-nav">
         <div class="container-xl container-nav">
@@ -58,17 +50,14 @@
                     <a href="#hiw" class="nav__item">Как это работает?</a>
                     <a href="#rates" class="nav__item">Тарифы</a>
                     <div class="nav__item row align-items-center justify-content-center sign-modal">
-                        <a href="#" class="col-auto">Войти</a>
-                        <a href="#" class="col-auto">Регистрация</a>
+                        <a href="login.html" class="col-auto">Войти</a>
+                        <a href="register.html" class="col-auto">Регистрация</a>
                     </div>
                 </nav>
             </div>
         </div>
     </div>
-    <div class="menu">
-        <span class="material-icons">menu</span>
-    </div>
-
+    
     <!-- greeting -->
     <div id="greeting" class="container-fluid greeting">
         <div class="bg bg-greeting row align-items-center">
@@ -76,14 +65,15 @@
                 отсле<br>живай
             </h2>
         </div>
-        <header class="container-xl header">
-            <div class="row align-items-center justify-content-between">
-                <h2 class="col-auto header__logo">
-                    <a href="#greeting" class="col-auto logo">sc.</a>
-                </h2>
-                <div class="col-auto row align-items-center justify-content-end sign">
-                    <a href="#" class="col-auto sign-up">Регистрация</a>
-                    <a href="#" class="col-auto sign-in blue-btn">Войти</a>
+        <header class="header">
+            <div class="relative">
+                <a href="#greeting" class="logo header__logo">sc.</a>
+                <div class="menu">
+                    <span class="material-icons">menu</span>
+                </div>
+                <div class="sign">
+                    <a href="register.html" class="sign-up">Регистрация</a>
+                    <a href="login.html" class="blue-btn sign-in">Войти</a>
                 </div>
             </div>
         </header>
@@ -109,15 +99,15 @@
             </h2>
         </div>
 
-        <div class="container-xl container-about">
-            <h2 id="about" class="row title title-about">
+        <div class="container-xl container-about animated-item">
+            <h2 id="about" class="row title title-about animated-item">
                 О НАС
             </h2>
-            <p class="row text text-about">
+            <p class="row text text-about animated-item">
                 Наша компания является разработчиком системы, позволяющей определять 
                 местоположение транспортного средства в каждый момент доставки груза.
             </p>
-            <div class="row btn-about">
+            <div class="row btn-about animated-item">
                 <a href="#" class="col-auto blue-btn join-in">ПРИСОЕДИНИТЬСЯ</a>
             </div>
         </div>
@@ -127,7 +117,7 @@
     <div class="container-fluid features">
         <div class="container-xl container-features">
             <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 align-self-center">
-                <div class="col">
+                <div class="col feature animated-item">
                     <div class="row align-items-center feature">
                         <div class="col-auto">
                             <img src="/img/USER-ICON.svg" alt="" class="feature__icon">
@@ -138,7 +128,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col">
+                <div class="col feature animated-item">
                     <div class="row align-items-center feature">
                         <div class="col-auto">
                             <img src="/img/SETTING-ICON.svg" alt="" class="feature__icon">
@@ -149,7 +139,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col">
+                <div class="col feature animated-item">
                     <div class="row align-items-center feature">
                         <div class="col-auto">
                             <img src="/img/CLOCK-ICON.svg" alt="" class="feature__icon">
@@ -160,7 +150,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col">
+                <div class="col feature animated-item">
                     <div class="row align-items-center feature">
                         <div class="col-auto">
                             <img src="/img/WIRELESS-ICON.svg" alt="" class="feature__icon">
@@ -181,7 +171,7 @@
             <h2 class="col-auto bg__title bg__title-hiw">КАК ЭТО РАБОТАЕТ?</h2>
         </div>
 
-        <div class="container-sm container-hiw">
+        <div class="container-sm container-hiw animated-item">
 
         </div>
     </div>
@@ -196,35 +186,10 @@
 
         <div class="container-xl container-rates">
             <div class="row justify-content-end">
-                <h2 id="rates" class="col-auto title title-rates">ТАРИФЫ</h2>
+                <h2 id="rates" class="col-auto title title-rates animated-item">ТАРИФЫ</h2>
             </div>
             <div class="row rates-table">
-                <div class="rate">
-                    <div class="rate shadow">
-                        <div class="row justify-content-center">
-                            <h6 class="col-auto rate__title">
-                                STANDART
-                            </h6>
-                        </div>
-                        
-                        <div class="row justify-content-center">
-                            <h6 class="col-auto rate__price">
-                                FREE$
-                            </h6>
-                        </div>
-    
-                        <div class="row rate__info">
-                            <div class="row">
-                                <img src="/img/check.svg" alt="" class="col-auto img-icon">
-                                <p class="col">до <strong>3</strong> отслеживаний
-                                    транспорта в сутки</p> 
-                            </div>
-                        </div>
-    
-                        <a href="" class="row justify-content-center rate__purchase">
-                            <span class="col-auto">КУПИТЬ ТАРИФ</span>
-                        </a>
-                    </div>
+                <div class="rate animated-item">
 
                     <div class="row justify-content-center">
                         <h6 class="col-auto rate__title">
@@ -250,37 +215,7 @@
                         <span class="col-auto">КУПИТЬ ТАРИФ</span>
                     </a>
                 </div>
-                <div class="rate rate-white">
-                    <div class="rate-white shadow">
-                        <div class="row justify-content-center">
-                            <h6 class="col-auto rate__title">
-                                STANDART
-                            </h6>
-                        </div>
-                        
-                        <div class="row justify-content-center">
-                            <h6 class="col-auto rate__price">
-                                <span><sup>$</sup></span><span>10</span><span>/в месяц</span>
-                            </h6>
-                        </div>
-    
-                        <div class="row rate__info">
-                            <div class="row">
-                                <img src="/img/check.svg" alt="" class="col-auto img-icon">
-                                <p class="col">1 месяц использования</p> 
-                            </div>
-    
-                            <div class="row">
-                                <img src="/img/check.svg" alt="" class="col-auto img-icon">
-                                <p class="col">до <strong>10</strong> отслеживаний
-                                    транспорта в сутки</p> 
-                            </div>
-                        </div>
-    
-                        <a href="" class="row justify-content-center rate__purchase">
-                            <span class="col-auto">КУПИТЬ ТАРИФ</span>
-                        </a>
-                    </div>
+                <div class="rate rate-white animated-item">
                     <div class="row justify-content-center">
                         <h6 class="col-auto rate__title">
                             STANDART
@@ -310,32 +245,7 @@
                         <span class="col-auto">КУПИТЬ ТАРИФ</span>
                     </a>
                 </div>
-                <div class="rate">
-                    <div class="rate shadow">
-                        <div class="row justify-content-center">
-                            <h6 class="col-auto rate__title">
-                                STANDART
-                            </h6>
-                        </div>
-                        
-                        <div class="row justify-content-center">
-                            <h6 class="col-auto rate__price">
-                                FREE$
-                            </h6>
-                        </div>
-    
-                        <div class="row rate__info">
-                            <div class="row">
-                                <img src="/img/check.svg" alt="" class="col-auto img-icon">
-                                <p class="col">до <strong>3</strong> отслеживаний
-                                    транспорта в сутки</p> 
-                            </div>
-                        </div>
-    
-                        <a href="" class="row justify-content-center rate__purchase">
-                            <span class="col-auto">КУПИТЬ ТАРИФ</span>
-                        </a>
-                    </div>
+                <div class="rate animated-item">
                     <div class="row justify-content-center">
                         <h6 class="col-auto rate__title">
                             PREMIUM
@@ -365,37 +275,7 @@
                         <span class="col-auto">КУПИТЬ ТАРИФ</span>
                     </a>
                 </div>
-                <div class="rate">
-                    <div class="rate shadow">
-                        <div class="row justify-content-center">
-                            <h6 class="col-auto rate__title">
-                                UNLIMITED
-                            </h6>
-                        </div>
-                        
-                        <div class="row justify-content-center">
-                            <h6 class="col-auto rate__price">
-                                <span><sup>$</sup></span><span>40</span><span>/в месяц</span>
-                            </h6>
-                        </div>
-    
-                        <div class="row rate__info">
-                            <div class="row">
-                                <img src="/img/check.svg" alt="" class="col-auto img-icon">
-                                <p class="col">1 месяц использования</p> 
-                            </div>
-    
-                            <div class="row">
-                                <img src="/img/check.svg" alt="" class="col-auto img-icon">
-                                <p class="col"><strong>НЕОГРАНИЧЕННОЕ КОЛИЧЕСТВО</strong> отслеживаний
-                                    транспорта в сутки</p> 
-                            </div>
-                        </div>
-    
-                        <a href="" class="row justify-content-center rate__purchase">
-                            <span class="col-auto">КУПИТЬ ТАРИФ</span>
-                        </a>
-                    </div>
+                <div class="rate animated-item">
                     <div class="row justify-content-center">
                         <h6 class="col-auto rate__title">
                             UNLIMITED

@@ -1,0 +1,16 @@
+@font-face {
+    font-family: Rubik-Black;
+    src: url("/font/Rubik/Rubik-Black.ttf");
+}
+@font-face {
+    font-family: Rubik-Bold;
+    src: local("Rubik-Bold"), url("/font/Rubik/Rubik-Bold.ttf");
+}
+@font-face {
+    font-family: Rubik-Regular;
+    src: local("Rubik-Regular"), url("/font/Rubik/Rubik-Regular.ttf");
+}
+@font-face {
+    font-family: Rubik-Medium;
+    src: local("Rubik-Medium"), url("/font/Rubik/Rubik-Medium.ttf");
+}

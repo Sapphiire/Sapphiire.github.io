@@ -37,6 +37,86 @@
     }
 }
 
+.feature.animated-item {
+    opacity: 0;
+    transform: translateX(-30px);
+    transition: all .3s ease-out;
+}
+
+.feature.animated {
+    opacity: 1;
+    transform: translateX(0px);
+    transition: all .3s ease-in-out;
+}
+
+.feature:nth-child(2).animated {
+    transition-delay: .1s;
+}
+.feature:nth-child(3).animated {
+    transition-delay: .2s;
+}
+.feature:nth-child(4).animated {
+    transition-delay: .3s;
+}
+
+.rate {
+    opacity: 0;
+    transform: translateX(30px);
+    transition: all .3s ease-out;
+}
+
+.text-about.animated-item, .btn-about.animated-item, .title-about.animated-item  {
+    opacity: 0;
+    transform: translateX(-30px);
+    transition: all .3s ease-out;
+}
+
+.text-about.animated, .btn-about.animated, .title-about.animated {
+    opacity: 1;
+    transform: translateX(0px);
+    transition: all .3s ease-out;
+}
+
+.container-hiw.animated-item {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all .3s ease-out;
+}
+
+.container-hiw.animated {
+    opacity: 1;
+    transform: translateY(0px);
+    transition: all .3s ease-out;
+}
+
+.title-rates.animated-item {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all .3s ease-out;
+}
+
+.title-rates.animated {
+    opacity: 1;
+    transform: translateY(0px);
+    transition: all .3s ease-out;
+}
+
+.rate.animated {
+    opacity: 1;
+    transform: translateX(0px);
+    transition: all .3s ease-in-out;
+}
+
+.rate:nth-child(1).animated {
+    transition-delay: .3s;
+}
+.rate:nth-child(2).animated {
+    transition-delay: .2s;
+}
+.rate:nth-child(3).animated {
+    transition-delay: .1s;
+}
+
 // variables
 
 $background-color-white: #ffffff;
@@ -194,12 +274,17 @@ h5, h6 {
     min-height: 400px;
     height: 40vh;
 
+    transition: all .3s ease-in;
+    &:hover {
+        transform: translateY(-5px);
+        box-shadow: .7em .7em 25px rgba(0, 0, 0, 0.15);
+        transition: all .3s ease-out;
+    }
     &-white {
         background-color: $background-color-white;
         & .rate__title, .rate__info , .rate__price {
             color: $color-black-text;
         }
-        box-shadow: .7em .7em 25px rgba(122,122,122,0.25);
     }
 
     &__title {
@@ -557,7 +642,7 @@ h5, h6 {
         padding: 10vh 10vh;
     }
     .container-xl.header {
-        padding: 0 5vh;
+        padding: 0 4vh;
     }
 
     .logo {
@@ -813,6 +898,9 @@ h5, h6 {
     }
     .container-greeting__info {
         padding-left: 20px;
+    }
+    .container-xl.header {
+        padding: 0 3vh;
     }
     .container-xl {
         padding: 10vh 1vh;
