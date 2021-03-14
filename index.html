@@ -1,12 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="/css/index.css">
-    <link rel="stylesheet" href="/css/index(media).css">
+    <link rel="stylesheet" href="/css/style.css">
 
     <link type="image/x-icon" rel="shortcut icon" href="img/favicon.png">
     <link type="image/png" sizes="16x16" rel="icon" href="img/favicon.png">
@@ -41,301 +40,235 @@
 <body>
 
     <!-- modal navigation -->
-    <div class="modal-nav">
-        <div class="container-xl container-nav">
-            <div class="row align-items-center">
-                <nav class="col">
-                    <a href="#greeting" class="nav__item">Главная</a>
-                    <a href="#about" class="nav__item">О нас</a>
-                    <a href="#hiw" class="nav__item">Как это работает?</a>
-                    <a href="#rates" class="nav__item">Тарифы</a>
-                    <div class="nav__item row align-items-center justify-content-center sign-modal">
-                        <a href="login.html" class="col-auto">Войти</a>
-                        <a href="register.html" class="col-auto">Регистрация</a>
-                    </div>
-                </nav>
-            </div>
-        </div>
-    </div>
     
-    <!-- greeting -->
-    <div id="greeting" class="container-fluid greeting">
-        <div class="bg bg-greeting row align-items-center">
-            <h2 class="bg__title bg__title-greeting">
-                отсле<br>живай
-            </h2>
+
+    <!-- header -->
+    <header id="header" class="header">
+        <div class="container-lg">
+            <article class="row align-items-center">
+                <h2 class="col-10 col-md-5"><a href="#" class="logo">sc.</a></h2>
+                <a href="#" class="col-2 text-end text-md-center us-none burger"><img src="/img/burger.svg" alt="burger"></a>
+                <article class="col-5 text-end d-none d-md-block sign">
+                    <a href="#" class="sign-up">Регистрация</a>
+                    <a href="#" class="sign-in">Войти</a>
+                </article>
+            </article>
         </div>
-        <header class="header">
-            <div class="relative">
-                <a href="#greeting" class="logo header__logo">sc.</a>
-                <div class="menu">
-                    <span class="material-icons">menu</span>
+    </header>
+    
+    <!-- main -->
+    <main>
+        <section id="greeting" class="greeting container-lg">
+            <article class="row justify-content-end">
+                <h1 class="col title greeting__title"></h1>
+                <img src="/img/art.png" alt="main illustration" class="col-lg-6 img-fluid greeting__img">
+            </article>
+    
+            <div class="row greeting__tools">
+                <div class="col-4 d-none d-md-block us-none">
+                    <span class="scroll">scroll</span>
                 </div>
-                <div class="sign">
-                    <a href="register.html" class="sign-up">Регистрация</a>
-                    <a href="login.html" class="blue-btn sign-in">Войти</a>
-                </div>
-            </div>
-        </header>
-
-        <main class="container-fluid container-greeting">
-            <div class="row align-items-center justify-content-between">
-                <div class="col-lg-7 text-center container-greeting__img">
-                    <img src="/img/art.png" alt="" class="img-fluid">
-                </div>
-                <div class="col-lg-5 container-greeting__info">
-                    <h1 class="row title title-greeting">SEE<br>URCARGO</h1>
-                    <h4 class="row slogan">Отслеживай груз -<br>рассчитывай время.</h4>
-                </div>
-            </div>
-        </main>
-    </div>
-
-    <!-- about -->
-    <div class="container-fluid about">
-        <div class="bg bg-about row">
-            <h2 class="col-auto bg__title bg__title-about">
-                02
-            </h2>
-        </div>
-
-        <div class="container-xl container-about animated-item">
-            <h2 id="about" class="row title title-about animated-item">
-                О НАС
-            </h2>
-            <p class="row text text-about animated-item">
-                Наша компания является разработчиком системы, позволяющей определять 
-                местоположение транспортного средства в каждый момент доставки груза.
-            </p>
-            <div class="row btn-about animated-item">
-                <a href="#" class="col-auto blue-btn join-in">ПРИСОЕДИНИТЬСЯ</a>
-            </div>
-        </div>
-    </div>
-
-    <!-- features -->
-    <div class="container-fluid features">
-        <div class="container-xl container-features">
-            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 align-self-center">
-                <div class="col feature animated-item">
-                    <div class="row align-items-center feature">
-                        <div class="col-auto">
-                            <img src="/img/USER-ICON.svg" alt="" class="feature__icon">
-                        </div>
-                        <div class="col feature__info">
-                            <h4 class="row title-icon">USER</h4>
-                            <p class="row text-icon">fj ojd ofos djos djofsofsjo jo jo fdsjo fdjo fdsjo fds</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col feature animated-item">
-                    <div class="row align-items-center feature">
-                        <div class="col-auto">
-                            <img src="/img/SETTING-ICON.svg" alt="" class="feature__icon">
-                        </div>
-                        <div class="col feature__info">
-                            <h4 class="row title-icon">SETTINGS</h4>
-                            <p class="row text-icon">fj ojd ofos djos djofsofsjo jo jo fdsjo fdjo fdsjo fds</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col feature animated-item">
-                    <div class="row align-items-center feature">
-                        <div class="col-auto">
-                            <img src="/img/CLOCK-ICON.svg" alt="" class="feature__icon">
-                        </div>
-                        <div class="col feature__info">
-                            <h4 class="row title-icon">CLOCK</h4>
-                            <p class="row text-icon">fj ojd ofos djos djofsofsjo jo jo fdsjo fdjo fdsjo fds</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col feature animated-item">
-                    <div class="row align-items-center feature">
-                        <div class="col-auto">
-                            <img src="/img/WIRELESS-ICON.svg" alt="" class="feature__icon">
-                        </div>
-                        <div class="col feature__info">
-                            <h4 class="row title-icon">WIRELESS</h4>
-                            <p class="row text-icon">fj ojd ofos djos djofsofsjo jo jo fdsjo fdjo fdsjo fds</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- video -->
-    <div id="hiw" class="container-fluid hiw">
-        <div class="bg bg-hiw row">
-            <h2 class="col-auto bg__title bg__title-hiw">КАК ЭТО РАБОТАЕТ?</h2>
-        </div>
-
-        <div class="container-sm container-hiw animated-item">
-
-        </div>
-    </div>
-
-    <!-- rates -->
-    <div class="container-fluid rates">
-        <div class="bg bg-rates row">
-            <h2 class="col-auto bg__title bg__title-rates">
-                04
-            </h2>
-        </div>
-
-        <div class="container-xl container-rates">
-            <div class="row justify-content-end">
-                <h2 id="rates" class="col-auto title title-rates animated-item">ТАРИФЫ</h2>
-            </div>
-            <div class="row rates-table">
-                <div class="rate animated-item">
-
-                    <div class="row justify-content-center">
-                        <h6 class="col-auto rate__title">
-                            БЕСПЛАТНЫЙ
-                        </h6>
-                    </div>
-                    
-                    <div class="row justify-content-center">
-                        <h6 class="col-auto rate__price">
-                            FREE$
-                        </h6>
-                    </div>
-
-                    <div class="row rate__info">
-                        <div class="row">
-                            <img src="/img/check.svg" alt="" class="col-auto img-icon">
-                            <p class="col">до <strong>3</strong> отслеживаний
-                                транспорта в сутки</p> 
-                        </div>
-                    </div>
-
-                    <a href="" class="row justify-content-center rate__purchase">
-                        <span class="col-auto">КУПИТЬ ТАРИФ</span>
+                <a href="#about" class="col col-md-4 text-center us-none"><img src="/img/arrow_down.svg" class="arrow_down" alt="arrow_dwn"></a> 
+                <div class="col-4 align-self-end text-end d-none d-md-block us-none social">
+                    <a href="#" class="material-icons">
+                        facebook
+                    </a>
+                    <a href="#" class="material-icons">
+                        facebook
+                    </a>
+                    <a href="#" class="material-icons">
+                        facebook
                     </a>
                 </div>
-                <div class="rate rate-white animated-item">
-                    <div class="row justify-content-center">
-                        <h6 class="col-auto rate__title">
-                            STANDART
-                        </h6>
-                    </div>
-                    
-                    <div class="row justify-content-center">
-                        <h6 class="col-auto rate__price">
+            </div>
+        </section>
+    
+        <section id="about" class="about">
+            <div class="container-lg">
+                <div class="num num-about us-none">02</div>
+    
+                <h2 class="row title about__title">О НАС</h2>
+                <p class="row text about__info">
+                    Наша компания является разработчиком системы, 
+                    позволяющей определять местоположение транспортного средства 
+                    в каждый момент доставки груза.
+                </p>
+                <h3 class="row title about__title-s">
+                    Что мы предлагаем:
+                </h3>
+    
+                <section class="features row">
+                    <article class="row align-items-center justify-content-center us-none feature">
+                        <img src="./img/USER-ICON.svg" alt="" class="col-3 feature__icon">
+                        <aside aria-label="USER" class="col-8 feature__info">
+                            <h4 class="row feature__title">USER</h4>
+                            <p class="row feature__text">
+                                Hello world I'm back bitches
+                                Hello world I'm back bitches
+                            </p>
+                        </aside>
+                    </article>
+                    <article class="row align-items-center justify-content-center us-none feature">
+                        <img src="./img/SETTINGS-ICON.svg" alt="" class="col-3 feature__icon">
+                        <aside aria-label="SETTINGS" class="col-8 feature__info">
+                            <h4 class="row feature__title">SETTINGS</h4>
+                            <p class="row feature__text">
+                                Hello world I'm back bitches
+                                Hello world I'm back bitches
+                            </p>
+                        </aside>
+                    </article>
+                    <article class="row align-items-center justify-content-center us-none feature">
+                        <img src="./img/WIRELESS-ICON.svg" alt="" class="col-3 feature__icon">
+                        <aside aria-label="WIRELESS" class="col-8 feature__info">
+                            <h4 class="row feature__title">WIRELESS</h4>
+                            <p class="row feature__text">
+                                Hello world I'm back bitches
+                                Hello world I'm back bitches
+                            </p>
+                        </aside>
+                    </article>
+                </section>
+            </div>
+        </section>
+
+        <section id="hiw" class="hiw container-lg">
+            <iframe class="hiw__video" title="how it works" src="https://www.youtube.com/embed/Cytxob-IxYg" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <a href="register.html" class="hiw__btn" type="reset">ПРИСОЕДИНИТЬСЯ</a>
+        </section>
+
+        <section id="rates" class="rates">
+            <div class="container-lg">
+                <div class="num num-rates us-none">04</div>
+
+                <h2 class="row justify-content-end col-auto title rates__title">ТАРИФЫ</h2>
+                <section class="row rates-list">
+                    <article class="rate">
+                        <h3 class="row justify-content-center col-auto title rate__title">БЕСПЛАТНЫЙ</h3>
+
+                        <h4 class="row justify-content-center col-auto rate__price">FREE$</h4>
+
+                        <aside aria-label="ADVANTAGES" class="rate__advantages">
+                            <article class="row justify-content-center advantage">
+                                <img class="col-2 offset-1 text-center check" src="/img/check.svg" alt="check">
+                                <p class="col-9">до <strong>3</strong> отслеживаний
+                                    транспорта в сутки</p>
+                            </article>
+                            
+                        </aside>
+
+
+                        <button id="but_rate" href="#" class="rate__purchase">КУПИТЬ ТАРИФ</button>
+                    </article>
+                    <article class="rate rate-white">
+                        <h3 class="title rate__title">STANDART</h3>
+
+                        <h4 class="rate__price">
                             <span><sup>$</sup></span><span>10</span><span>/в месяц</span>
-                        </h6>
-                    </div>
+                        </h4>
 
-                    <div class="row rate__info">
-                        <div class="row">
-                            <img src="/img/check.svg" alt="" class="col-auto img-icon">
-                            <p class="col">1 месяц использования</p> 
-                        </div>
+                        <aside aria-label="ADVANTAGES" class="rate__advantages">
+                            <article class="row justify-content-center advantage">
+                                <img class="col-2 offset-1 text-center check" src="/img/check.svg" alt="check">
+                                <p class="col-9">1 месяц пользования</p>
+                            </article>   
+                            <article class="row justify-content-center advantage">
+                                <img class="col-2 offset-1 text-center check" src="/img/check.svg" alt="check">
+                                <p class="col-9">до <strong>10</strong> отслеживаний
+                                    транспорта в сутки</p>
+                            </article>  
+                        </aside>
 
-                        <div class="row">
-                            <img src="/img/check.svg" alt="" class="col-auto img-icon">
-                            <p class="col">до <strong>10</strong> отслеживаний
-                                транспорта в сутки</p> 
-                        </div>
-                    </div>
 
-                    <a href="" class="row justify-content-center rate__purchase">
-                        <span class="col-auto">КУПИТЬ ТАРИФ</span>
-                    </a>
-                </div>
-                <div class="rate animated-item">
-                    <div class="row justify-content-center">
-                        <h6 class="col-auto rate__title">
-                            PREMIUM
-                        </h6>
-                    </div>
-                    
-                    <div class="row justify-content-center">
-                        <h6 class="col-auto rate__price">
+                        <button id="but_rate" href="#" class="rate__purchase">КУПИТЬ ТАРИФ</button>
+                    </article>
+                    <article class="rate">
+                        <h3 class="title rate__title">PREMIUM</h3>
+
+                        <h4 class="rate__price">
                             <span><sup>$</sup></span><span>20</span><span>/в месяц</span>
-                        </h6>
-                    </div>
+                        </h4>
 
-                    <div class="row rate__info">
-                        <div class="row">
-                            <img src="/img/check.svg" alt="" class="col-auto img-icon">
-                            <p class="col">1 месяц использования</p> 
-                        </div>
+                        <aside aria-label="ADVANTAGES" class="rate__advantages">
+                            <article class="row justify-content-center advantage">
+                                <img class="col-2 offset-1 text-center check" src="/img/check.svg" alt="check">
+                                <p class="col-9">1 месяц пользования</p>
+                            </article>   
+                            <article class="row justify-content-center advantage">
+                                <img class="col-2 offset-1 text-center check" src="/img/check.svg" alt="check">
+                                <p class="col-9">до <strong>20</strong> отслеживаний
+                                    транспорта в сутки</p>
+                            </article>  
+                        </aside>
 
-                        <div class="row">
-                            <img src="/img/check.svg" alt="" class="col-auto img-icon">
-                            <p class="col">до <strong>20</strong> отслеживаний
-                                транспорта в сутки</p> 
-                        </div>
-                    </div>
 
-                    <a href="" class="row justify-content-center rate__purchase">
-                        <span class="col-auto">КУПИТЬ ТАРИФ</span>
-                    </a>
-                </div>
-                <div class="rate animated-item">
-                    <div class="row justify-content-center">
-                        <h6 class="col-auto rate__title">
-                            UNLIMITED
-                        </h6>
-                    </div>
-                    
-                    <div class="row justify-content-center">
-                        <h6 class="col-auto rate__price">
+                        <button id="but_rate" href="#" class="rate__purchase">КУПИТЬ ТАРИФ</button>
+                    </article>
+                    <article class="rate">
+                        <h3 class="title rate__title">UNLIMITED</h3>
+
+                        <h4 class="rate__price">
                             <span><sup>$</sup></span><span>40</span><span>/в месяц</span>
-                        </h6>
-                    </div>
+                        </h4>
 
-                    <div class="row rate__info">
-                        <div class="row">
-                            <img src="/img/check.svg" alt="" class="col-auto img-icon">
-                            <p class="col">1 месяц использования</p> 
-                        </div>
+                        <aside aria-label="ADVANTAGES" class="rate__advantages">
+                            <article class="row justify-content-center advantage">
+                                <img class="col-2 offset-1 text-center check" src="/img/check.svg" alt="check">
+                                <p class="col-8">1 месяц пользования</p>
+                            </article>   
+                            <article class="row justify-content-center advantage">
+                                <img class="col-2 offset-1 text-center check" src="/img/check.svg" alt="check">
+                                <p class="col-8">НЕОГРАНИЧЕННОЕ КОЛИЧЕСТВО ОТСЛЕЖИВАНИЙ В СУТКИ</p>
+                            </article>   
+                        </aside>
 
-                        <div class="row">
-                            <img src="/img/check.svg" alt="" class="col-auto img-icon">
-                            <p class="col"><strong>НЕОГРАНИЧЕННОЕ КОЛИЧЕСТВО</strong> отслеживаний
-                                транспорта в сутки</p> 
-                        </div>
-                    </div>
 
-                    <a href="" class="row justify-content-center rate__purchase">
-                        <span class="col-auto">КУПИТЬ ТАРИФ</span>
-                    </a>
-                </div>
+                        <button id="but_rate" href="#" class="rate__purchase">КУПИТЬ ТАРИФ</button>
+                    </article>
+                </section>
             </div>
-        </div>
-    </div>
-
+        </section>
+    </main>
+    
     <!-- footer -->
-    <footer class="container-fluid footer">
-        <div class="container-xl container-footer">
-            <div class="row justify-content-between">
-                <div class="col-auto col-lg-auto col-md-12">
-                    <h2 class="row logo footer__logo">
-                        <a href="#greeting" class="col-auto logo">sc.</a>
-                    </h2>
-                    <p class="row footer__info">
-                        <div class="col-auto">
-                            Copyrighted 2021 by OOO SeeUrCargo
-                        </div>
-                    </p>
-                </div>
-                <div class="col-auto row align-items-center contacts">
-                    <div class="row email">
-                        <img src="/img/mail.svg" alt="" class="col-auto img-icon">
-                        <a class="col">zakharovvadzim@yandex.by</a> 
-                    </div>
-                    <div class="row phone">
-                        <img src="/img/phone.svg" alt="" class="col-auto img-icon">
-                        <a class="col">+375295784829</a> 
-                    </div>
-                </div>
+    <footer id="footer" class="footer container-lg">
+        <article class="row justify-content-between">
+            <div class="col-12 col-md-auto">
+                <h2><a href="#" class="logo">sc.</a></h2>
+                <p class="footer__text">All rights reserved by OOO "SeeUrCargo"</p>
             </div>
-            
-        </div>
+
+            <aside aria-label="CONTACTS" class="col-12 col-md-auto contacts">
+                <p class="contact mail">zakharovvadzim@yandex.by</p>
+                <p class="contact phone">+375295472953</p>
+            </aside>  
+        </article>
+
+        <div class="w-100 line"></div>
+
+        <article class="row">
+            <div class="col-4 col-md-auto nav">
+                <a href="#header">Главная</a>
+                <a href="#about">О нас</a>
+                <a href="#hiw">Как это работает?</a>
+                <a href="#rates">Тарифы</a>
+            </div>
+            <div class="col-4 col-md-auto sign">
+                <a href="register.html">Регистрация</a>
+                <a href="login.html">Войти</a>
+            </div>
+            <div class="col align-self-end text-end social">
+                <a href="#" class="material-icons">
+                    facebook
+                </a>
+                <a href="#" class="material-icons">
+                    facebook
+                </a>
+                <a href="#" class="material-icons">
+                    facebook
+                </a>
+            </div>
+        </article>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>

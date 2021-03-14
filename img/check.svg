@@ -1,9 +1,9 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20.704" height="20.704" viewBox="0 0 20.704 20.704">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18.643" height="18.643" viewBox="0 0 18.643 18.643">
   <defs>
     <linearGradient id="linear-gradient" x1="1" y1="0.177" x2="-0.486" gradientUnits="objectBoundingBox">
       <stop offset="0" stop-color="#ff2954"/>
       <stop offset="1" stop-color="#ffad35"/>
     </linearGradient>
   </defs>
-  <path id="Icon_awesome-check-circle" data-name="Icon awesome-check-circle" d="M21.266,10.914A10.352,10.352,0,1,1,10.914.563,10.352,10.352,0,0,1,21.266,10.914ZM9.717,16.4l7.68-7.68a.668.668,0,0,0,0-.944l-.944-.944a.668.668,0,0,0-.945,0L9.245,13.09,6.32,10.166a.668.668,0,0,0-.945,0l-.944.944a.668.668,0,0,0,0,.944L8.773,16.4A.668.668,0,0,0,9.717,16.4Z" transform="translate(-0.563 -0.563)" fill="url(#linear-gradient)"/>
+  <path id="check" d="M19.206,9.884A9.322,9.322,0,1,1,9.884.563,9.322,9.322,0,0,1,19.206,9.884ZM8.806,14.82,15.722,7.9a.6.6,0,0,0,0-.85l-.85-.85a.6.6,0,0,0-.851,0l-5.64,5.64L5.747,9.21a.6.6,0,0,0-.851,0l-.85.85a.6.6,0,0,0,0,.85L7.955,14.82A.6.6,0,0,0,8.806,14.82Z" transform="translate(-0.563 -0.563)" fill="url(#linear-gradient)"/>
 </svg>
