@@ -1,5 +1,6 @@
 //variables
 
+const header = document.querySelector(".header");
 const burger = document.querySelector(".burger");
 const modal_nav = document.querySelector(".modal-nav");
 const modal_links = modal_nav.querySelectorAll("a");
@@ -29,6 +30,7 @@ document.addEventListener('keydown', (e) => {
 
 window.addEventListener('scroll', (e) => {
     scrollAnimation();
+    scrollHeader();
 })
 
 // functions
@@ -40,19 +42,24 @@ const toggle = (item) => {
         item.classList.add("active");
 }
 
-
 const scrollAnimation = () => {
-    let scrollTriger = (1*window.innerHeight / 2) + window.scrollY;
+    let scrollTrigger = (1*window.innerHeight / 2) + window.scrollY;
     animates_items.forEach(el => {
         let scrollOffSet = el.offsetParent.offsetTop + el.offsetHeight/4;
-
-        if(scrollTriger >= scrollOffSet) {
+        if(scrollTrigger >= scrollOffSet)
             el.classList.add('animated');
-        }
-        
     })
+}
+
+const scrollHeader = () => {
+    let scrollTrigger = 3*window.innerHeight/4;
+    if(window.scrollY > scrollTrigger)
+        header.classList.add("active");
+    else 
+        header.classList.remove("active");
 }
 
 // start 
 
+scrollHeader();
 scrollAnimation();

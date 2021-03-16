@@ -5,11 +5,11 @@ header {
     position: absolute;
     top: 0;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translate(-50%, 0);
     width: 100vw;
   }
   header .row {
-    min-height: 15vh;
+    height: 15vh;
   }
   
   .logo {

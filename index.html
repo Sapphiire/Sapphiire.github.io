@@ -5,9 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="/css/preloader.css">
+    <link rel="preload" href="/css/fonts.css" as="font">
     <link rel="stylesheet" href="/css/header.css">
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/animations.css">
+
+    <link rel="prerender" href="login.html"/>
+    <link rel="prerender" href="register.html"/>
+
     <link type="image/x-icon" rel="shortcut icon" href="img/favicon.png">
     <link type="image/png" sizes="16x16" rel="icon" href="img/favicon.png">
     <link type="image/png" sizes="32x32" rel="icon" href="img/favicon.png">
@@ -35,18 +41,19 @@
     <meta name="msapplication-square310x310logo" content="img/favicon.png">
     <meta name="application-name" content="sc.">
     
+    <meta name="description" content="Платформа для отслеживания перевозки груза" />
     <meta name="theme-color" content="#ffffff">
     <title>SeeUrCargo - платформа для отслеживания груза.</title>
 </head>
 <body>
 
+    <!-- preloader -->
+
+   
+
     <!-- modal navigation -->
 
-    <a href="#" class="burger us-none">
-        <div class="absolute">
-            <span class="align-middle"></span>
-        </div>
-    </a>
+    
     <div class="modal-nav">
         <div class="container-lg">
             <div class="row align-items-center">
@@ -80,7 +87,11 @@
             </article>
         </div>
     </header>
-    
+    <a href="#" class="burger us-none">
+        <div class="absolute">
+            <span class="align-middle"></span>
+        </div>
+    </a>
     <!-- main -->
     <main>
         <section id="greeting" class="greeting container-lg">
@@ -124,8 +135,8 @@
                     Что мы предлагаем:
                 </h3>
     
-                <section class="features row animate">
-                    <article class="row align-items-center justify-content-center us-none feature">
+                <section class="features row">
+                    <article class="row align-items-center justify-content-center us-none feature animate">
                         <img src="./img/USER-ICON.svg" alt="" class="col-3 feature__icon">
                         <aside aria-label="USER" class="col-8 feature__info">
                             <h4 class="row feature__title">USER</h4>
@@ -135,7 +146,7 @@
                             </p>
                         </aside>
                     </article>
-                    <article class="row align-items-center justify-content-center us-none feature">
+                    <article class="row align-items-center justify-content-center us-none feature animate">
                         <img src="./img/SETTINGS-ICON.svg" alt="" class="col-3 feature__icon">
                         <aside aria-label="SETTINGS" class="col-8 feature__info">
                             <h4 class="row feature__title">SETTINGS</h4>
@@ -145,7 +156,7 @@
                             </p>
                         </aside>
                     </article>
-                    <article class="row align-items-center justify-content-center us-none feature">
+                    <article class="row align-items-center justify-content-center us-none feature animate">
                         <img src="./img/WIRELESS-ICON.svg" alt="" class="col-3 feature__icon">
                         <aside aria-label="WIRELESS" class="col-8 feature__info">
                             <h4 class="row feature__title">WIRELESS</h4>
@@ -169,8 +180,8 @@
                 <div class="num num-rates us-none">04</div>
 
                 <h2 class="row justify-content-end col-auto title rates__title">ТАРИФЫ</h2>
-                <section class="row rates-list animate">
-                    <article class="rate">
+                <section class="row rates-list ">
+                    <article class="rate animate">
                         <h3 class="row justify-content-center col-auto title rate__title">БЕСПЛАТНЫЙ</h3>
 
                         <h4 class="row justify-content-center col-auto rate__price">FREE$</h4>
@@ -186,7 +197,7 @@
 
                         <button id="btn_rate-1" href="#" class="rate__purchase">КУПИТЬ ТАРИФ</button>
                     </article>
-                    <article class="rate rate-white">
+                    <article class="rate rate-white animate">
                         <h3 class="title rate__title">STANDART</h3>
 
                         <h4 class="rate__price">
@@ -208,7 +219,7 @@
 
                         <button id="btn_rate-2" href="#" class="rate__purchase">КУПИТЬ ТАРИФ</button>
                     </article>
-                    <article class="rate">
+                    <article class="rate animate">
                         <h3 class="title rate__title">PREMIUM</h3>
 
                         <h4 class="rate__price">
@@ -230,7 +241,7 @@
 
                         <button id="btn_rate-3" href="#" class="rate__purchase">КУПИТЬ ТАРИФ</button>
                     </article>
-                    <article class="rate">
+                    <article class="rate animate">
                         <h3 class="title rate__title">UNLIMITED</h3>
 
                         <h4 class="rate__price">
