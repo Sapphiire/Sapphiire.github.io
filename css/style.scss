@@ -161,25 +161,19 @@ footer .sign {
 
 .greeting {
     position: relative;
-    max-height: 100vh;
     margin-top: 15vh;
     padding-top: 5vh;
     padding-bottom: 5vh;
+    & .row {
+        position: relative;
+    }
     &__title {
         position: absolute;
-        top: 55%;
+        z-index: -1;
+        top: 25%;
         left: 0;
-        margin-top: -120px;
         font-size: 52px;
-        &:before {
-            content: "ОТСЛЕЖИВАЙ ГРУЗ";
-            position: absolute;
-            top: -50px;
-        }
-        &:after {
-            content: "РАССЧИТЫВАЙ ВРЕМЯ";
-            position: absolute;
-        }
+        line-height: 1em;
     }
 }
 
@@ -241,7 +235,6 @@ footer .sign {
 .rates {
     position: relative;
     width: 100vw;
-    min-height: 100vh;
     padding-top: 15vh;
     padding-bottom: 15vh;
     background-color: $dark-dp0;
@@ -303,7 +296,7 @@ footer .sign {
     align-items: center;
 
     min-height: 400px;
-    max-height: 600px;
+    max-height: 500px;
     height: 70vh;
     background-color: $dark-dp1;
     color: $white;
@@ -328,7 +321,6 @@ footer .sign {
             font-size: .4em;
         }
     }
-
     &__advantages {
         margin-top: 20px;
     }
@@ -407,6 +399,8 @@ footer .sign {
 .check {
     user-select: none;
     height: 18px;
+    padding-right: 5px;
+    padding-left: 5px;
 }
 
 .contact {
@@ -458,7 +452,11 @@ footer .sign {
 
 // Large devices (desktops, less than 1200px)
 @media (max-width: 1199.98px) {
-
+    .greeting{
+        &__title {
+            font-size: 44px;
+        }
+    }
 }
 
 // Medium devices (tablets, less than 992px)
@@ -468,10 +466,9 @@ footer .sign {
     }
     .greeting {
         &__title {
-            top: 25%;
-        }
-        &__img {
-            margin-top: 100px;
+            position: relative;
+            font-size: 52px;
+            line-height: 1em;
         }
     }
     .about {
@@ -517,9 +514,13 @@ footer .sign {
 // Small devices (landscape phones, less than 768px)
 @media (max-width: 767.98px) {
     .greeting{
-
+        padding-top: 0vh;
+        padding-bottom: 0vh;
+        & .row>* {
+            padding-top: 30px;
+            padding-bottom: 30px;
+        }
         &__title {
-            top: 25%;
             font-size: 42px;
         }
     }
@@ -566,7 +567,6 @@ footer .sign {
     }
     .greeting{
         &__title {
-            top: 35%;
             font-size: 36px;
         }
     }
@@ -592,7 +592,6 @@ footer .sign {
     }
     .greeting{
         &__title {
-            top: 35%;
             font-size: 28px;
         }
     }
