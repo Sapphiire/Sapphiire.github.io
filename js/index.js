@@ -1,6 +1,5 @@
 //variables
 
-const header = document.querySelector(".header");
 const burger = document.querySelector(".burger");
 const modal_nav = document.querySelector(".modal-nav");
 const modal_links = modal_nav.querySelectorAll("a");
@@ -30,7 +29,6 @@ document.addEventListener('keydown', (e) => {
 
 window.addEventListener('scroll', (e) => {
     scrollAnimation();
-    scrollHeader();
 })
 
 // functions
@@ -51,15 +49,7 @@ const scrollAnimation = () => {
     })
 }
 
-const scrollHeader = () => {
-    let scrollTrigger = 3*window.innerHeight/4;
-    if(window.scrollY > scrollTrigger)
-        header.classList.add("active");
-    else 
-        header.classList.remove("active");
-}
 
 // start 
 
-scrollHeader();
 scrollAnimation();

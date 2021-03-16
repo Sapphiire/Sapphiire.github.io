@@ -150,13 +150,6 @@ header {
     }
   }
   @media (max-width: 991.98px) {
-    .logo-login {
-      color: #19191D;
-    }
-    .logo-login:hover, .logo-login:focus {
-        color: #19191D;
-    }
-  
     .bg {
       display: none;
     }
