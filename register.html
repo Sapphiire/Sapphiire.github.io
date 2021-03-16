@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/loading.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="/css/header.css">
     <link rel="stylesheet" href="/css/sign.css">
     <link type="image/x-icon" rel="shortcut icon" href="img/favicon.png">
     <link type="image/png" sizes="16x16" rel="icon" href="img/favicon.png">
@@ -39,12 +39,18 @@
 </head>
 <body>
 
-    <a href="index.html" class="logo logo-register">sc.</a>
+    <header id="header" class="header">
+        <div class="container-lg">
+            <article class="row align-items-center">
+                <h2 class="col"><a href="index.html" class="logo "><img class="arrow_back" src="/img/arrow_down.svg" alt="back"></a></h2>
+            </article>
+        </div>
+    </header>
 
-    <div class="container-fluid register">
-        <div class="row">
-            <div class="col-lg-8 row container-register align-items-center justify-content-center">
-                <div class="col-auto content">
+    <section class="container-fluid register">
+        <article class="row">
+            <article class="col-lg-9 row container-register align-items-center justify-content-center">
+                <article class="col-auto content">
                     <div class="row justify-content-center">
                         <h1 class="col-auto title register__title">РЕГИСТРАЦИЯ</h1>
                     </div>
@@ -67,12 +73,12 @@
                             <div href="#" class="col-auto btn-submit-text">Зарегистрироваться</div>
                         </a>
                     </form>
-                </div>
-            </div>
-            <div class="col-lg bg">
+                </article>
+            </article>
+            <aside aria-label="register" class="col-lg bg">
                 <div class="bg__text">РЕГИСТ<br>РАЦИЯ</div>
-            </div>
-        </div>
-    </div>
+            </aside>
+        </article>
+    </section>
 </body>
 </html>

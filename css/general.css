@@ -4,29 +4,33 @@ body {
     overflow-x: hidden;
   }
   
-  a {
-    color: #F7F7F7;
-    text-decoration: none;
-  }
-  a:hover, a:focus {
-    outline: 0;
-    color: #F7F7F7;
-    text-decoration: none;
-  }
-  
-  h1, h2, h3, h4, h5, h6 {
-    padding: 0;
-    margin: 0;
-  }
-  
-  h1, h2 {
-    font-family: Rubik-Black;
-  }
-  
-  h3, h4 {
-    font-family: Rubik-Bold;
-  }
-  
-  h5, h6 {
-    font-family: Rubik-Regular;
-  }
+a {
+  color: #F7F7F7;
+  text-decoration: none;
+}
+a:hover, a:focus {
+  outline: 0;
+  color: #F7F7F7;
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  padding: 0;
+  margin: 0;
+}
+
+h1, h2 {
+  font-family: Rubik-Black;
+}
+
+h3, h4 {
+  font-family: Rubik-Bold;
+}
+
+h5, h6 {
+  font-family: Rubik-Regular;
+}
+
+.us-none {
+  user-select: none;
+}

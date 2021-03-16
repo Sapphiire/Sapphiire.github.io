@@ -5,11 +5,21 @@ body {
   overflow: hidden;
 }
 
+header {
+  z-index: 2;
+  background-color: none;
+}
+
 .login {
     height: 100vh;
 }
 .login .row {
     height: 100%;
+}
+
+.arrow_back {
+  height: 30px;
+  transform: rotate(90deg);
 }
 
 .container-login {
@@ -33,10 +43,10 @@ body {
     user-select: none;
     position: relative;
     height: 100%;
-    background-color: #121212;
+    background-color: #19191D;
 }
 .bg__text {
-    color: #1D1D1D;
+    color: #26262C;
     font-family: Rubik-Black;
     line-height: 0.8em;
     writing-mode: tb-rl;
@@ -52,34 +62,6 @@ body {
     padding: 0;
 }
 
-.logo {
-  position: absolute;
-  top: calc(7.5vh - 24px);
-  left: 7vw;
-  z-index: 1;
-}
-  
-.logo-login {
-    color: #F7F7F7;
-    z-index: 1;
-    font-size: 32px;
-    font-family: Rubik-Black;
-    text-decoration: none;
-}
-.logo-login:hover, .logo-login:focus {
-    color: #F7F7F7;
-}
-  
-.logo-register {
-    color: #121212;
-    font-size: 32px;
-    font-family: Rubik-Black;
-    text-decoration: none;
-}
-.logo-register:hover, .logo-register:focus {
-    color: #121212;
-} 
-  
 .form {
     margin-top: 20px;
   }
@@ -90,12 +72,12 @@ body {
     opacity: 0.6;
     background: transparent;
     border: 0;
-    border-bottom: 2px solid #121212;
+    border-bottom: 2px solid #19191D;
     padding: 0;
     transition: all 0.3s;
   }
   .form__input::placeholder {
-    color: #121212;
+    color: #19191D;
   }
   .form__input:focus {
     outline: 0;
@@ -109,7 +91,7 @@ body {
     font-family: Rubik-Bold;
   }
   .form__forget:hover, .form__forget:focus {
-    color: #121212;
+    color: #19191D;
   }
   .form-check a {
     color: #169AFF;
@@ -121,7 +103,7 @@ body {
   
   .btn-submit-bg {
     width: 100%;
-    background-color: #121212;
+    background-color: #19191D;
     margin: 0;
     border-radius: 100px;
     padding-top: 10px;
@@ -169,10 +151,10 @@ body {
   }
   @media (max-width: 991.98px) {
     .logo-login {
-      color: #121212;
+      color: #19191D;
     }
     .logo-login:hover, .logo-login:focus {
-        color: #121212;
+        color: #19191D;
     }
   
     .bg {

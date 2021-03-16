@@ -5,8 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="/css/header.css">
     <link rel="stylesheet" href="/css/style.css">
-
+    <link rel="stylesheet" href="/css/animations.css">
     <link type="image/x-icon" rel="shortcut icon" href="img/favicon.png">
     <link type="image/png" sizes="16x16" rel="icon" href="img/favicon.png">
     <link type="image/png" sizes="32x32" rel="icon" href="img/favicon.png">
@@ -40,17 +41,41 @@
 <body>
 
     <!-- modal navigation -->
+
+    <a href="#" class="burger us-none">
+        <div class="absolute">
+            <span class="align-middle"></span>
+        </div>
+    </a>
+    <div class="modal-nav">
+        <div class="container-lg">
+            <div class="row align-items-center">
+                <nav aria-label="navigation">
+                    <a href="#header" class="row">Главная</a>
+                    <a href="#about" class="row">О нас</a>
+                    <a href="#hiw" class="row">Как это работает?</a>
+                    <a href="#rates" class="row">Тарифы</a>
     
+                    <article class="d-block d-md-none">
+                        <a href="login.html" class="row">Войти</a>
+                        <a href="register.html" class="row">Регистрация</a>
+                    </article>
+                </nav>
+            </div>
+            
+        </div>
+    </div>
 
     <!-- header -->
     <header id="header" class="header">
         <div class="container-lg">
             <article class="row align-items-center">
                 <h2 class="col-10 col-md-5"><a href="#" class="logo">sc.</a></h2>
-                <a href="#" class="col-2 text-end text-md-center us-none burger"><img src="/img/burger.svg" alt="burger"></a>
-                <article class="col-5 text-end d-none d-md-block sign">
-                    <a href="#" class="sign-up">Регистрация</a>
-                    <a href="#" class="sign-in">Войти</a>
+                
+                
+                <article class="col-7 text-end d-none d-md-block sign">
+                    <a href="register.html" class="sign-up">Регистрация</a>
+                    <a href="login.html" class="sign-in">Войти</a>
                 </article>
             </article>
         </div>
@@ -95,11 +120,11 @@
                     позволяющей определять местоположение транспортного средства 
                     в каждый момент доставки груза.
                 </p>
-                <h3 class="row title about__title-s">
+                <h3 class="row title about__title-s animate">
                     Что мы предлагаем:
                 </h3>
     
-                <section class="features row">
+                <section class="features row animate">
                     <article class="row align-items-center justify-content-center us-none feature">
                         <img src="./img/USER-ICON.svg" alt="" class="col-3 feature__icon">
                         <aside aria-label="USER" class="col-8 feature__info">
@@ -135,7 +160,7 @@
         </section>
 
         <section id="hiw" class="hiw container-lg">
-            <iframe class="hiw__video" title="how it works" src="https://www.youtube.com/embed/Cytxob-IxYg" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe class="hiw__video animate" title="how it works" src="https://www.youtube.com/embed/Cytxob-IxYg" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             <a href="register.html" class="hiw__btn">ПРИСОЕДИНИТЬСЯ</a>
         </section>
 
@@ -144,7 +169,7 @@
                 <div class="num num-rates us-none">04</div>
 
                 <h2 class="row justify-content-end col-auto title rates__title">ТАРИФЫ</h2>
-                <section class="row rates-list">
+                <section class="row rates-list animate">
                     <article class="rate">
                         <h3 class="row justify-content-center col-auto title rate__title">БЕСПЛАТНЫЙ</h3>
 
@@ -248,7 +273,7 @@
         <div class="w-100 line"></div>
 
         <article class="row">
-            <nav class="col-4 col-md-auto nav">
+            <nav aria-label="footer navigation" class="col-4 col-md-auto nav">
                 <a href="#header">Главная</a>
                 <a href="#about">О нас</a>
                 <a href="#hiw">Как это работает?</a>

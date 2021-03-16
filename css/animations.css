@@ -17,86 +17,16 @@
     }
 }
 
-.feature.animated-item {
-    opacity: 0;
-    transform: translateX(-30px);
-    transition: all 0.3s ease-out;
-  }
-  
-  .feature.animated {
-    opacity: 1;
-    transform: translateX(0px);
-    transition: all 0.3s ease-in-out;
-  }
-  
-  .feature:nth-child(2).animated {
-    transition-delay: 0.1s;
-  }
-  
-  .feature:nth-child(3).animated {
-    transition-delay: 0.2s;
-  }
-  
-  .feature:nth-child(4).animated {
-    transition-delay: 0.3s;
-  }
-  
-  .rate {
-    opacity: 0;
-    transform: translateX(30px);
-    transition: all 0.3s ease-out;
-  }
-  
-  .text-about.animated-item, .btn-about.animated-item, .title-about.animated-item {
-    opacity: 0;
-    transform: translateX(-30px);
-    transition: all 0.3s ease-out;
-  }
-  
-  .text-about.animated, .btn-about.animated, .title-about.animated {
-    opacity: 1;
-    transform: translateX(0px);
-    transition: all 0.3s ease-out;
-  }
-  
-  .container-hiw.animated-item {
-    opacity: 0;
-    transform: translateY(30px);
-    transition: all 0.3s ease-out;
-  }
-  
-  .container-hiw.animated {
-    opacity: 1;
-    transform: translateY(0px);
-    transition: all 0.3s ease-out;
-  }
-  
-  .title-rates.animated-item {
-    opacity: 0;
-    transform: translateY(30px);
-    transition: all 0.3s ease-out;
-  }
-  
-  .title-rates.animated {
-    opacity: 1;
-    transform: translateY(0px);
-    transition: all 0.3s ease-out;
-  }
-  
-  .rate.animated {
-    opacity: 1;
-    transform: translateX(0px);
-    transition: all 0.3s ease-in-out;
-  }
-  
-  .rate:nth-child(1).animated {
-    transition-delay: 0.3s;
-  }
-  
-  .rate:nth-child(2).animated {
-    transition-delay: 0.2s;
-  }
-  
-  .rate:nth-child(3).animated {
-    transition-delay: 0.1s;
-  }
+.animate {
+  opacity: 0;
+  transform: translateY(-30px);
+  transition: all .3s ease-out;
+  transition-delay: .1s;
+}
+
+.animated {
+  opacity: 1;
+  transform: translateX(0px);
+  transition: all 0.3s ease-in-out;
+  transition-delay: .1s;
+}
