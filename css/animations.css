@@ -24,6 +24,16 @@
     transform: translateY(0);
   }
 }
+@keyframes slide-left {
+  0% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  100% {
+    opacity: .6;
+    transform: translateY(0);
+  }
+}
 
 .feature.animate.animated {
   opacity: 1;
@@ -55,4 +65,16 @@
 }
 .rate.animated:nth-child(4) {
   animation-delay: 0s;
+}
+
+.modal-nav a {
+  opacity: 0;
+  transform: translateX(100px);
+}
+
+.modal-nav a.active {
+  opacity: .6;
+  transform: translateY(0);
+  animation: slide-left .4s ease-out backwards;
+  animation-delay: .4s;
 }

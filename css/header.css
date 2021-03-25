@@ -1,14 +1,14 @@
 @import url("fonts.css");
 @import url("general.css");
 
-header {
+nav.header {
     position: absolute;
     top: 0;
     left: 50%;
     transform: translate(-50%, 0);
     width: 100vw;
   }
-  header .row {
+  nav.header .row {
     height: 15vh;
   }
   

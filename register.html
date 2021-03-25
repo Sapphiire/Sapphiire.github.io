@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="preload" href="/css/fonts.css">
     <link rel="stylesheet" href="/css/header.css">
-    <link rel="stylesheet" href="/css/sign.css">
+    <link rel="stylesheet" href="/css/register.css">
 
     <link rel="prerender" href="login.html"/>
     <link rel="prerender" href="index.html"/>
@@ -44,46 +44,38 @@
 </head>
 <body>
 
-    <header id="header" class="header">
+    <nav id="header" class="header">
         <div class="container-lg">
             <article class="row align-items-center">
-                <h2 class="col"><a href="index.html" class="logo "><img class="arrow_back" src="/img/arrow_down.svg" alt="back"></a></h2>
+                <h2 class="col-10"><a href="index.html" class="logo"><img class="arrow_back" src="/img/arrow_down.svg" alt="back"></a></h2>
             </article>
         </div>
-    </header>
+    </nav>
 
-    <section class="container-fluid register">
-        <article class="row">
-            <article class="col-lg-9 row container-register align-items-center justify-content-center">
-                <article class="col-auto content">
-                    <div class="row justify-content-center">
-                        <h1 class="col-auto title register__title">РЕГИСТРАЦИЯ</h1>
-                    </div>
-                    <form action="" class="row form">
-                        <input placeholder="Email" type="email" name="Email" id="" class="form__input">
-                        <input placeholder="Repeat Email" type="password" name="Password" id="" class="form__input">
-                        <input placeholder="Password" type="password" name="Password" id="" class="form__input">
-                        
-                        <div class="row">
-                            <div class="form-check">
-                                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
-                                <label class="form-check-label" for="flexCheckDefault">
-                                  Я соглашаюсь с представленным <a href="#">Пользовательским соглашением</a> и 
-                                  <a href="#">Политикой конфиденциальности</a>
-                                </label>
-                            </div>
-                        </div>
-                        
-                        <a href="#" class="row form__btn btn-submit-bg justify-content-center align-items-center">
-                            <div href="#" class="col-auto btn-submit-text">Зарегистрироваться</div>
-                        </a>
-                    </form>
-                </article>
-            </article>
-            <aside aria-label="register" class="col-lg bg">
-                <div class="bg__text">РЕГИСТ<br>РАЦИЯ</div>
-            </aside>
-        </article>
-    </section>
+    <article class="content">
+        <aside class="row justify-content-center">
+            <h1 class="col-auto title register__title">Регистрация</h1>
+        </aside>
+        <form action="" class="row form">
+            <input placeholder="Email" type="email" name="Email" id="" class="form__input">
+            <input placeholder="Repeat Email" type="password" name="Password" id="" class="form__input">
+            <input placeholder="Password" type="password" name="Password" id="" class="form__input">
+            
+            <div class="row">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                    <label class="form-check-label" for="flexCheckDefault">
+                      Я соглашаюсь с представленным <a href="#">Пользовательским соглашением</a> и 
+                      <a href="#">Политикой конфиденциальности</a>
+                    </label>
+                </div>
+            </div>
+            
+            <a href="#" class="row form__btn btn-submit-bg justify-content-center align-items-center">
+                <div href="#" class="col-auto btn-submit-text">Зарегистрироваться</div>
+            </a>
+        </form>
+    </article>
+
 </body>
 </html>

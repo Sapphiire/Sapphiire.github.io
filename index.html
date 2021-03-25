@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="/css/preloader.css">
-    <link rel="preload" href="/css/fonts.css" as="font">
-    <link rel="stylesheet" href="/css/header.css">
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="/css/animations.css">
+    <link rel="stylesheet" href="css/preloader.css">
+    <link rel="preload" href="/css/fonts.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
 
     <link rel="prerender" href="login.html"/>
     <link rel="prerender" href="register.html"/>
@@ -43,6 +43,7 @@
     
     <meta name="description" content="Платформа для отслеживания перевозки груза" />
     <meta name="theme-color" content="#ffffff">
+
     <title>SeeUrCargo - платформа для отслеживания груза.</title>
 </head>
 <body>
@@ -53,7 +54,6 @@
 
     <!-- modal navigation -->
 
-    
     <div class="modal-nav">
         <div class="container-lg">
             <div class="row align-items-center">
@@ -74,19 +74,17 @@
     </div>
 
     <!-- header -->
-    <header id="header" class="header">
+    <nav aria-label="header nav" id="header" class="header">
         <div class="container-lg">
             <article class="row align-items-center">
                 <h2 class="col-10 col-md-5"><a href="#" class="logo">sc.</a></h2>
-                
-                
                 <article class="col-7 text-end d-none d-md-block sign">
                     <a href="register.html" class="sign-up">Регистрация</a>
                     <a href="login.html" class="sign-in">Войти</a>
                 </article>
             </article>
         </div>
-    </header>
+    </nav>
     <a href="#" class="burger us-none">
         <div class="absolute">
             <span class="align-middle"></span>
@@ -94,11 +92,11 @@
     </a>
     <!-- main -->
     <main>
-        <section id="greeting" class="greeting container-lg">
+        <header id="greeting" class="greeting container-lg">
             <article class="row justify-content-end">
                 <h1 class="title greeting__title">ОТСЛЕЖИВАЙ ГРУЗ <br> РАССЧИТЫВАЙ ВРЕМЯ</h1>
                 <div class="col-lg-6 text-center">
-                    <img src="/img/art.png" alt="main illustration" class="img-fluid">
+                    <img src="img/art.png" alt="main illustration" class="img-fluid">
                 </div>
             </article>
     
@@ -106,7 +104,7 @@
                 <article class="col-4 d-none d-md-block us-none">
                     <span class="scroll">scroll</span>
                 </article>
-                <a href="#about" class="col col-md-4 text-center us-none"><img src="/img/arrow_down.svg" class="arrow_down" alt="arrow_dwn"></a> 
+                <a href="#about" class="col col-md-4 text-center us-none"><img src="img/arrow_down.svg" class="arrow_down" alt="arrow_dwn"></a>
                 <article class="col-4 align-self-end text-end d-none d-md-block us-none social">
                     <a href="#" class="material-icons">
                         facebook
@@ -119,7 +117,7 @@
                     </a>
                 </article>
             </article>
-        </section>
+        </header>
     
         <section id="about" class="about">
             <div class="container-lg">
@@ -130,14 +128,16 @@
                     Наша компания является разработчиком системы, 
                     позволяющей определять местоположение транспортного средства 
                     в каждый момент доставки груза.
-                </p>
+                    <br><br>Данная система не требует стационарной установки отдельного GPS-приемника в 
+                    транспортное средство для процесса контроля и отслеживания груза.
+                  </p>
                 <h3 class="row title about__title-s animate">
                     Что мы предлагаем:
                 </h3>
     
                 <section class="features row">
                     <article class="row align-items-center justify-content-center us-none feature animate">
-                        <img src="./img/USER-ICON.svg" alt="" class="col-3 feature__icon">
+                        <img src="img/USER-ICON.svg" alt="" class="col-3 feature__icon">
                         <aside aria-label="USER" class="col-8 feature__info">
                             <h4 class="row feature__title">USER</h4>
                             <p class="row feature__text">
@@ -188,7 +188,7 @@
 
                         <aside aria-label="ADVANTAGES" class="rate__advantages">
                             <article class="row justify-content-center advantage">
-                                <img class="col text-center check" src="/img/check.svg" alt="check">
+                                <img class="col text-center check" src="img/check.svg" alt="check">
                                 <p class="col-9">до <strong>3</strong> отслеживаний
                                     транспорта в сутки</p>
                             </article>
@@ -206,11 +206,11 @@
 
                         <aside aria-label="ADVANTAGES" class="rate__advantages">
                             <article class="row justify-content-center advantage">
-                                <img class="col-2 offset-1 text-center check" src="/img/check.svg" alt="check">
+                                <img class="col-2 offset-1 text-center check" src="img/check.svg" alt="check">
                                 <p class="col-9">1 месяц пользования</p>
                             </article>   
                             <article class="row justify-content-center advantage">
-                                <img class="col-2 offset-1 text-center check" src="/img/check.svg" alt="check">
+                                <img class="col-2 offset-1 text-center check" src="img/check.svg" alt="check">
                                 <p class="col-9">до <strong>10</strong> отслеживаний
                                     транспорта в сутки</p>
                             </article>  
@@ -228,11 +228,11 @@
 
                         <aside aria-label="ADVANTAGES" class="rate__advantages">
                             <article class="row justify-content-center advantage">
-                                <img class="col-2 offset-1 text-center check" src="/img/check.svg" alt="check">
+                                <img class="col-2 offset-1 text-center check" src="img/check.svg" alt="check">
                                 <p class="col-9">1 месяц пользования</p>
                             </article>   
                             <article class="row justify-content-center advantage">
-                                <img class="col-2 offset-1 text-center check" src="/img/check.svg" alt="check">
+                                <img class="col-2 offset-1 text-center check" src="img/check.svg" alt="check">
                                 <p class="col-9">до <strong>20</strong> отслеживаний
                                     транспорта в сутки</p>
                             </article>  
@@ -250,11 +250,11 @@
 
                         <aside aria-label="ADVANTAGES" class="rate__advantages">
                             <article class="row justify-content-center advantage">
-                                <img class="col-2 offset-1 text-center check" src="/img/check.svg" alt="check">
+                                <img class="col-2 offset-1 text-center check" src="img/check.svg" alt="check">
                                 <p class="col-8">1 месяц пользования</p>
                             </article>   
                             <article class="row justify-content-center advantage">
-                                <img class="col-2 offset-1 text-center check" src="/img/check.svg" alt="check">
+                                <img class="col-2 offset-1 text-center check" src="img/check.svg" alt="check">
                                 <p class="col-8">НЕОГРАНИЧЕННОЕ КОЛИЧЕСТВО ОТСЛЕЖИВАНИЙ В СУТКИ</p>
                             </article>   
                         </aside>
@@ -274,14 +274,12 @@
                 <h2><a href="#" class="logo">sc.</a></h2>
                 <p class="footer__text">All rights reserved by OOO "SeeUrCargo"</p>
             </div>
-
             <aside aria-label="CONTACTS" class="col-12 col-md-auto contacts">
                 <p class="contact mail">zakharovvadzim@yandex.by</p>
                 <p class="contact phone">+375295472953</p>
             </aside>  
         </article>
 
-        <div class="w-100 line"></div>
 
         <article class="row">
             <nav aria-label="footer navigation" class="col-4 col-md-auto nav">
@@ -308,8 +306,7 @@
         </article>
     </footer>
 
-    <script src="/js/headhesive.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
-    <script src="/js/index.js"></script>
+    <script src="js/index.js"></script>
 </body>
 </html>
